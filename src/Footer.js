@@ -32,7 +32,7 @@ const Rights = styled.div`
   font-size: 12px;
   margin-left: 13px;
 `;
-const Title = styled.div`
+const Title = styled.h3`
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 16px;
@@ -44,20 +44,29 @@ const LinkList = styled.a`
   color: #636363;
 `;
 
-const A = styled.a`
+const Link = styled.a`
   text-decoration: none;
   margin-left: 25px;
   vertical-align: middle;
   color: #636363;
 `;
 
-const Select = styled.div`margin-bottom: 152px;`;
+const Select = styled.div`
+  flex-basis: 23.3%;
+
+  @media (max-width: 576px) {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+  }
+`;
 
 const OriginalSelect = styled.select`opacity: 0;`;
 
 const Content = styled.div`
   display: flex;
   justify-content: space-between;
+  padding-bottom: 48px;
 `;
 
 const DesignedSelect = styled.div`
@@ -83,6 +92,8 @@ const DesignedSelect = styled.div`
   }
 `;
 
+const BlockWithLinks = styled.div`@media (max-width: 576px) {display: none;}`;
+
 export default function() {
   return (
     <Footer>
@@ -104,7 +115,7 @@ export default function() {
               <span>United States dollar</span>
             </DesignedSelect>
           </Select>
-          <div>
+          <BlockWithLinks>
             <Title>Airbnb</Title>
             <LinkList href="">About us</LinkList>
             <LinkList href="">Careers</LinkList>
@@ -112,8 +123,8 @@ export default function() {
             <LinkList href="">Policies</LinkList>
             <LinkList href="">Help</LinkList>
             <LinkList href="">Diversity & Belongin</LinkList>
-          </div>
-          <div>
+          </BlockWithLinks>
+          <BlockWithLinks>
             <Title>Discover</Title>
             <LinkList href="">Trust & Safety</LinkList>
             <LinkList href="">Travel Credit</LinkList>
@@ -121,14 +132,14 @@ export default function() {
             <LinkList href="">Business Travel</LinkList>
             <LinkList href="">Guidebooks</LinkList>
             <LinkList href="">Airbnbmag</LinkList>
-          </div>
-          <div>
+          </BlockWithLinks>
+          <BlockWithLinks>
             <Title>Hosting</Title>
             <LinkList href="">Why Host</LinkList>
             <LinkList href="">Hospitality</LinkList>
             <LinkList href="">Responsible Hosting</LinkList>
             <LinkList href="">Community Center</LinkList>
-          </div>
+          </BlockWithLinks>
         </Content>
         <Wrapper>
           <Logo>
@@ -136,18 +147,18 @@ export default function() {
             <Rights>© Airbnb Inc.</Rights>
           </Logo>
           <Nav>
-            <A href="">Terms</A>
-            <A href="">Privacy</A>
-            <A href="">Site map</A>
-            <A>
+            <Link href="">Terms</Link>
+            <Link href="">Privacy</Link>
+            <Link href="">Site map</Link>
+            <Link>
               <img src={facebook} alt="facebook" />
-            </A>
-            <A>
+            </Link>
+            <Link>
               <img src={twitter} alt="twitter" />
-            </A>
-            <A>
+            </Link>
+            <Link>
               <img src={instagram} alt="instagram" />
-            </A>
+            </Link>
           </Nav>
         </Wrapper>
       </div>

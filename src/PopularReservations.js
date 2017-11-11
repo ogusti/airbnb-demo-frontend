@@ -31,14 +31,14 @@ const RightButton = styled.div`
   }
 `;
 
-const A = styled.a`
+const Link = styled.a`
   padding-right: 10px;
   display: inline-block;
   color: black;
 `;
 const Headline = styled.h2`font-size: 32px;`;
 
-const WhatItIs = styled.div`
+const WhatItIs = styled.p`
   font-weight: bold;
   text-transform: uppercase;
   font-size: 10px;
@@ -47,10 +47,11 @@ const WhatItIs = styled.div`
   margin-bottom: 5px;
 `;
 
-const Title = styled.div`
+const Title = styled.h3`
   font-size: 18px;
   font-weight: bold;
   text-align: left;
+  margin: 0;
 `;
 
 const TopRow = styled.div`
@@ -65,7 +66,7 @@ const Gallery = styled.div`
   positon: relative;
 `;
 
-const Price = styled.div`
+const Price = styled.p`
   display: block;
   font-size: 18px;
   text-align: left;
@@ -76,18 +77,21 @@ const Card = styled.div`margin-right: 17px;`;
 
 const Wrapper = styled.div`margin-right: 17px;`;
 
-const SeeAll = styled.div`margin: auto 0;`;
+const SeeAll = styled.div`
+  margin: auto 0;
+  white-space: nowrap;
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <FluidContainer>
           <Wrapper>
             <TopRow>
               <Headline>Popular reservations around the world</Headline>
               <SeeAll>
-                <A href="#">See all</A>
+                <Link href="#">See all</Link>
                 <img src={Arrow} alt="more" />
               </SeeAll>
             </TopRow>
@@ -96,6 +100,7 @@ class App extends Component {
         <ScrollContainer>
           <Container>
             <Gallery>
+              <RightButton />
               <Card>
                 <img src={Chum} alt="speakeasy" />
                 <WhatItIs>speakeasy</WhatItIs>
@@ -109,7 +114,7 @@ class App extends Component {
                 <Price>About $50 per person</Price>
               </Card>
               <Card>
-                <img src={German} alt="german cafe" />
+                <img src={German} alt="german american" />
                 <WhatItIs>German american</WhatItIs>
                 <Title>Prime Meats</Title>
                 <Price>About $55 per person</Price>

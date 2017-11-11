@@ -2,15 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 976px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-
   @media only screen and (max-width: 400px) {
     width: 640px;
   }
-
   @media only screen and (min-width: 1200px) {
     width: 1184px;
     max-width: 100%;
@@ -20,17 +17,14 @@ export const Container = styled.div`
 export const FluidContainer = styled.div`
   width: 976px;
   max-width: 100%;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding-right: 8px;
   padding-left: 8px;
-
   @media only screen and (max-width: 400px) {
     width: 640px;
   }
-
   @media only screen and (min-width: 1200px) {
     width: 1184px;
     max-width: 100%;
@@ -40,21 +34,18 @@ export const FluidContainer = styled.div`
 export const ScrollContainer = styled.div`
   width: 976px;
   max-width: 100%;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding-right: 8px;
   padding-left: 8px;
-
+  position: relative;
   @media only screen and (max-width: 400px) {
     width: 640px;
   }
-
   @media only screen and (max-width: 1000px) {
     overflow-x: scroll;
   }
-
   @media only screen and (min-width: 1200px) {
     width: 1184px;
     max-width: 100%;

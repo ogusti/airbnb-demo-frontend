@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import "./Fonts.css";
+import "./fonts.css";
 import Header from "./Header";
-import ExploreAirbnb from "./ExploreAirbnb.js";
-import Experiences from "./Experiences.js";
-import Homes from "./Homes.js";
-import PopularReservations from "./PopularReservations.js";
-import FeaturedDestinations from "./FeaturedDestinations.js";
+import ExploreAirbnb from "./ExploreAirbnb";
+import Experiences from "./Experiences";
+import Homes from "./Homes";
+import PopularReservations from "./PopularReservations";
+import FeaturedDestinations from "./FeaturedDestinations";
 import { Container, FluidContainer, ScrollContainer } from "./Containers";
-import Footer from "./Footer.js";
+import Footer from "./Footer";
 import styled from "styled-components";
 
 class App extends Component {

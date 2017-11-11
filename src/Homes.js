@@ -31,7 +31,7 @@ const RightButton = styled.div`
   }
 `;
 
-const A = styled.a`
+const Link = styled.a`
   padding-right: 10px;
   display: inline-block;
 `;
@@ -48,7 +48,7 @@ const Gallery = styled.div`
   justify-content: space-between;
   position: relative;
 `;
-const Description = styled.div`
+const Description = styled.p`
   display: inline;
   font-size: 15px;
   /*text-overflow: ellipsis;
@@ -77,7 +77,7 @@ const Stars = styled.div`
   margin-top: 7px;
 `;
 
-const Span = styled.span`margin: 7px 4px 0 0;`;
+const Star = styled.img`margin: 7px 4px 0 0;`;
 
 const Card = styled.div`margin-right: 17px;`;
 
@@ -98,7 +98,7 @@ class App extends Component {
             <TopRow>
               <Headline>Homes</Headline>
               <SeeAll>
-                <A href="#">See all</A>
+                <Link href="#">See all</Link>
                 <img src={Arrow} alt="more" />
               </SeeAll>
             </TopRow>
@@ -119,21 +119,11 @@ class App extends Component {
                 </MiddleInfo>
                 <BottomInfo>
                   <Stars>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
                   </Stars>
                   <DopInfo>
                     97 <Dot>·</Dot> Superhost
@@ -153,21 +143,11 @@ class App extends Component {
                 </MiddleInfo>
                 <BottomInfo>
                   <Stars>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
                   </Stars>
                   <DopInfo>
                     97 <Dot>·</Dot> Superhost
@@ -185,21 +165,11 @@ class App extends Component {
                 </MiddleInfo>
                 <BottomInfo>
                   <Stars>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
-                    <Span>
-                      <img src={StarPicture} alt="star" />
-                    </Span>
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
+                    <Star src={StarPicture} alt="star" />
                   </Stars>
                   <DopInfo>
                     97 <Dot>·</Dot> Superhost

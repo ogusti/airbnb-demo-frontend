@@ -40,20 +40,20 @@ const Input = styled.input`
 const Nav = styled.nav`
   display: flex;
   align-items: center;
-  
+
   @media only screen and (max-width: 768px) {
     display: none;
-
+  }
 `;
 
-const A = styled.a`
+const Link = styled.a`
   text-decoration: none;
   margin-left: 25px;
 `;
 
 export default function() {
   return (
-    <Header className="header">
+    <Header>
       <div className="container">
         <Wrapper>
           <div className="col-md-7 col-lg-6">
@@ -63,10 +63,10 @@ export default function() {
             </LogoSearch>
           </div>
           <Nav>
-            <A href="">Become a host</A>
-            <A href="">Help</A>
-            <A href="">Sign Up</A>
-            <A href="">Log In</A>
+            <Link href="">Become a host</Link>
+            <Link href="">Help</Link>
+            <Link href="">Sign Up</Link>
+            <Link href="">Log In</Link>
           </Nav>
         </Wrapper>
       </div>

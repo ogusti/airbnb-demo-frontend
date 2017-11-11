@@ -38,7 +38,7 @@ const Headline = styled.h2`
   margin: 0;
 `;
 
-const A = styled.a`
+const Link = styled.a`
   padding-right: 10px;
   display: inline-block;
 `;
@@ -64,7 +64,7 @@ const Price = styled.div`
   font-weight: bold;
 `;
 
-const Description = styled.div`
+const Description = styled.p`
   display: inline;
   font-size: 15px;
 `;
@@ -77,7 +77,7 @@ const Stars = styled.div`
   margin-top: 7px;
 `;
 
-const Span = styled.span`margin: 7px 4px 0 0;`;
+const Star = styled.img`margin: 7px 4px 0 0;`;
 
 const Reviews = styled.span`
   font-size: 12px;
@@ -100,7 +100,7 @@ export default function() {
           <TopRow>
             <Headline>Experiences</Headline>
             <SeeAll>
-              <A href="#">See all</A>
+              <Link href="#">See all</Link>
               <img src={Arrow} alt="more" />
             </SeeAll>
           </TopRow>
@@ -118,21 +118,11 @@ export default function() {
               </TopInfo>
               <BottomInfo>
                 <Stars>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
                 </Stars>
                 <Reviews>44 reviews</Reviews>
               </BottomInfo>
@@ -145,21 +135,11 @@ export default function() {
               </TopInfo>
               <BottomInfo>
                 <Stars>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
                 </Stars>
                 <Reviews>46 reviews</Reviews>
               </BottomInfo>
@@ -172,21 +152,11 @@ export default function() {
               </TopInfo>
               <BottomInfo>
                 <Stars>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
                 </Stars>
                 <Reviews>44 reviews</Reviews>
               </BottomInfo>
@@ -199,21 +169,11 @@ export default function() {
               </TopInfo>
               <BottomInfo>
                 <Stars>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
-                  <Span>
-                    <img src={StarPicture} alt="star" />
-                  </Span>
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="star" />
                 </Stars>
                 <Reviews>44 reviews</Reviews>
               </BottomInfo>

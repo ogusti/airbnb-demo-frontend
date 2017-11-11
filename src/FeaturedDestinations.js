@@ -34,13 +34,13 @@ const RightButton = styled.div`
   }
 `;
 
-const A = styled.a`
+const Link = styled.a`
   padding-right: 10px;
   display: inline-block;
 `;
 const Headline = styled.h2`font-size: 32px;`;
 
-const Title = styled.div`
+const Title = styled.h3`
   font-size: 15px;
   font-weight: bold;
   text-align: left;
@@ -69,13 +69,13 @@ const SeeAll = styled.div`margin: auto 0;`;
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <FluidContainer>
           <Wrapper>
             <TopRow>
               <Headline>Featured Destinations</Headline>
               <SeeAll>
-                <A href="#">See all</A>
+                <Link href="#">See all</Link>
                 <img src={Arrow} alt="more" />
               </SeeAll>
             </TopRow>

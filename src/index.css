@@ -23,10 +23,6 @@ a {
   color: black;
 }
 
-.App {
-  overflow: hidden;
-}
-
 @media only screen and (max-width: 1200px) {
   .hidden-md {
     display: none !important;

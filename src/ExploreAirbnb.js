@@ -39,7 +39,7 @@ const Wrapper = styled.section`
   }
 `;
 
-const P = styled.div`
+const P = styled.p`
   margin-left: 24px;
   @media only screen and (max-width: 400px) {
     margin-left: 12px;
