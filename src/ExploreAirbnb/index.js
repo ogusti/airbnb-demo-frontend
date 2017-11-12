@@ -4,49 +4,7 @@ import homePicture from "./home.png";
 import experiencesPicture from "./experiences.png";
 import restarauntsPicture from "./restaraunts.png";
 import { Container, FluidContainer, ScrollContainer } from "../Containers";
-
-const Categories = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
-const Title = styled.h1`
-  font: 32px "CircularAir-Bold", sans-serif;
-  line-height: 34px;
-  margin-top: 48px;
-  margin-bottom: 24px;
-`;
-
-const Img = styled.img`
-  width: 96px;
-  height: 72px;
-  @media only screen and (max-width: 400px) {
-    width: auto;
-    height: auto;
-  }
-`;
-
-const Wrapper = styled.section`
-  display: flex;
-  align-items: center;
-  border: 1px solid rgba(72, 72, 72, 0.2);
-  border-radius: 5px;
-  overflow: hidden;
-  @media only screen and (max-width: 400px) {
-    flex-direction: column;
-    align-items: left;
-  }
-`;
-
-const P = styled.p`
-  margin-left: 24px;
-  @media only screen and (max-width: 400px) {
-    margin-left: 12px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
-`;
+import { Categories, Title, Img, Wrapper, Paragraph } from "./Styled";
 
 export default function() {
   return (
@@ -61,19 +19,19 @@ export default function() {
               <div className="col-xs-4">
                 <Wrapper>
                   <Img src={homePicture} alt="Homes" />
-                  <P>Homes</P>
+                  <Paragraph>Homes</Paragraph>
                 </Wrapper>
               </div>
               <div className="col-xs-4">
                 <Wrapper>
                   <Img src={experiencesPicture} alt="Experiences" />
-                  <P>Experiences</P>
+                  <Paragraph>Experiences</Paragraph>
                 </Wrapper>
               </div>
               <div className="col-xs-4">
                 <Wrapper>
                   <Img src={restarauntsPicture} alt="Restaurants" />
-                  <P>Restaurants</P>
+                  <Paragraph>Restaurants</Paragraph>
                 </Wrapper>
               </div>
             </div>
