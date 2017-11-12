@@ -1,18 +1,16 @@
 import React, { Component } from "react";
-import Arrow from "./Experiences/arrow.svg";
-import { Container, FluidContainer, ScrollContainer } from "./Containers";
-import ButtonArrow from "./ButtonArrow.svg";
+import { Container, FluidContainer, ScrollContainer } from "../Containers";
+import Arrow from "../arrow.svg";
+import ButtonArrow from "../ButtonArrow.svg";
 import styled from "styled-components";
-import CapeTown from "./FeaturedDestinations/Capetown.png";
-import LosAngeles from "./FeaturedDestinations/Losangeles.png";
-import Miami from "./FeaturedDestinations/Miami.png";
-import Paris from "./FeaturedDestinations/Paris.png";
-import Seoul from "./FeaturedDestinations/Seoul.png";
-import Tokyo from "./FeaturedDestinations/Tokyo.png";
+import Chum from "./Chum.png";
+import Korean from "./Korean.png";
+import SeaFood from "./Seafood.png";
+import German from "./German.png";
 
 const RightButton = styled.div`
   position: absolute;
-  right: -0.5%;
+  right: 14.4%;
   width: 40px;
   height: 40px;
   background-color: #fff;
@@ -23,10 +21,9 @@ const RightButton = styled.div`
   border: 1px solid rgba(72, 72, 72, 0.2);
   border-radius: 50%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-  top: 83px;
 
   @media only screen and (min-width: 1200px) {
-    top: 105px;
+    top: 150.2%;
   }
 
   @media only screen and (max-width: 1000px) {
@@ -37,15 +34,24 @@ const RightButton = styled.div`
 const Link = styled.a`
   padding-right: 10px;
   display: inline-block;
+  color: black;
 `;
 const Headline = styled.h2`font-size: 32px;`;
 
+const WhatItIs = styled.p`
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: left;
+  margin-top: 12px;
+  margin-bottom: 5px;
+`;
+
 const Title = styled.h3`
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   text-align: left;
-  margin-top: 8px;
-  padding-bottom: 64px;
+  margin: 0;
 `;
 
 const TopRow = styled.div`
@@ -57,14 +63,24 @@ const TopRow = styled.div`
 const Gallery = styled.div`
   display: flex;
   justify-content: space-between;
-  position: relative;
+  positon: relative;
+`;
+
+const Price = styled.p`
+  display: block;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 5px;
 `;
 
 const Card = styled.div`margin-right: 17px;`;
 
 const Wrapper = styled.div`margin-right: 17px;`;
 
-const SeeAll = styled.div`margin: auto 0;`;
+const SeeAll = styled.div`
+  margin: auto 0;
+  white-space: nowrap;
+`;
 
 class App extends Component {
   render() {
@@ -73,7 +89,7 @@ class App extends Component {
         <FluidContainer>
           <Wrapper>
             <TopRow>
-              <Headline>Featured Destinations</Headline>
+              <Headline>Popular reservations around the world</Headline>
               <SeeAll>
                 <Link href="#">See all</Link>
                 <img src={Arrow} alt="more" />
@@ -86,28 +102,28 @@ class App extends Component {
             <Gallery>
               <RightButton />
               <Card>
-                <img src={Paris} alt="Paris" />
-                <Title>Paris</Title>
+                <img src={Chum} alt="speakeasy" />
+                <WhatItIs>speakeasy</WhatItIs>
+                <Title>Chumley’s</Title>
+                <Price>About $60 per person</Price>
               </Card>
               <Card>
-                <img src={Miami} alt="Miami" />
-                <Title>Miami</Title>
+                <img src={Korean} alt="hanjan" />
+                <WhatItIs>Korean gastropub</WhatItIs>
+                <Title>Hanjan</Title>
+                <Price>About $50 per person</Price>
               </Card>
               <Card>
-                <img src={Tokyo} alt="Tokyo" />
-                <Title>Tokyo</Title>
+                <img src={German} alt="german american" />
+                <WhatItIs>German american</WhatItIs>
+                <Title>Prime Meats</Title>
+                <Price>About $55 per person</Price>
               </Card>
               <Card>
-                <img src={CapeTown} alt="Capetown" />
-                <Title>Cape Town</Title>
-              </Card>
-              <Card>
-                <img src={Seoul} alt="Seoul" />
-                <Title>Seoul</Title>
-              </Card>
-              <Card>
-                <img src={LosAngeles} alt="Los Angeles" />
-                <Title>Los Angeles</Title>
+                <img src={SeaFood} alt="seafood" />
+                <WhatItIs>Fine seafood</WhatItIs>
+                <Title>Seaprice</Title>
+                <Price>About $70 per person</Price>
               </Card>
             </Gallery>
           </Container>

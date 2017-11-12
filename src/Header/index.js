@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "./Header/Logo.svg";
+import logo from "./Logo.svg";
 import styled from "styled-components";
-import searchPicture from "./Header/Search.svg";
+import searchPicture from "./Search.svg";
 
 const Header = styled.header`
   height: 80px;

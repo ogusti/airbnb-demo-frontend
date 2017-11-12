@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import twitter from "./Footer/twitter.svg";
-import facebook from "./Footer/facebook.svg";
-import instagram from "./Footer/instagram.png";
-import logo from "./Footer/logo.svg";
-import downarrow from "./Footer/downarrow.svg";
+import twitter from "./twitter.svg";
+import facebook from "./facebook.svg";
+import instagram from "./instagram.png";
+import logo from "./logo.svg";
+import downarrow from "./downarrow.svg";
 
 const Footer = styled.footer`
   padding-top: 48px;

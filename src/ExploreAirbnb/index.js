@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import homePicture from "./ExploreAirbnb/Home.png";
-import experiencesPicture from "./ExploreAirbnb/Experiences.png";
-import restarauntsPicture from "./ExploreAirbnb/Restaraunts.png";
-import { Container, FluidContainer, ScrollContainer } from "./Containers";
+import homePicture from "./Home.png";
+import experiencesPicture from "./Experiences.png";
+import restarauntsPicture from "./Restaraunts.png";
+import { Container, FluidContainer, ScrollContainer } from "../Containers";
 
 const Categories = styled.section`
   display: flex;

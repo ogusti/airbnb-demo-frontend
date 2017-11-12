@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, FluidContainer, ScrollContainer } from "./Containers";
-import ButtonArrow from "./ButtonArrow.svg";
-import Arrow from "./Experiences/arrow.svg";
-import StarPicture from "./star.svg";
-import ForestPicture from "./Experiences/forest.png";
-import MountainPicture from "./Experiences/mountain.png";
-import SalsaPicture from "./Experiences/salsa.png";
-import SeaPicture from "./Experiences/sea.png";
+import { Container, FluidContainer, ScrollContainer } from "../Containers";
+import ButtonArrow from "../ButtonArrow.svg";
+import Arrow from "../arrow.svg";
+import StarPicture from "../star.svg";
+import ForestPicture from "./forest.png";
+import MountainPicture from "./mountain.png";
+import SalsaPicture from "./salsa.png";
+import SeaPicture from "./sea.png";
 
 const RightButton = styled.div`
   position: absolute;
