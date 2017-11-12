@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import Arrow from "../arrow.svg";
 import { Container, FluidContainer, ScrollContainer } from "../Containers";
-import ButtonArrow from "../ButtonArrow.svg";
+import ButtonArrow from "../buttonArrow.svg";
 import styled from "styled-components";
-import CapeTown from "./Capetown.png";
-import LosAngeles from "./Losangeles.png";
-import Miami from "./Miami.png";
-import Paris from "./Paris.png";
-import Seoul from "./Seoul.png";
-import Tokyo from ".//Tokyo.png";
+import CapeTown from "./capetown.png";
+import LosAngeles from "./losAngeles.png";
+import Miami from "./miami.png";
+import Paris from "./paris.png";
+import Seoul from "./seoul.png";
+import Tokyo from "./tokyo.png";
 
 const RightButton = styled.div`
   position: absolute;

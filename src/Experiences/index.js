@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, FluidContainer, ScrollContainer } from "../Containers";
-import ButtonArrow from "../ButtonArrow.svg";
+import ButtonArrow from "../buttonArrow.svg";
 import Arrow from "../arrow.svg";
 import StarPicture from "../star.svg";
 import ForestPicture from "./forest.png";

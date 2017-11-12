@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Container, FluidContainer, ScrollContainer } from "../Containers";
 import Arrow from "../arrow.svg";
-import ButtonArrow from "../ButtonArrow.svg";
+import ButtonArrow from "../buttonArrow.svg";
 import styled from "styled-components";
-import Chum from "./Chum.png";
-import Korean from "./Korean.png";
-import SeaFood from "./Seafood.png";
-import German from "./German.png";
+import Chum from "./chum.png";
+import Korean from "./korean.png";
+import SeaFood from "./seafood.png";
+import German from "./german.png";
 
 const RightButton = styled.div`
   position: absolute;

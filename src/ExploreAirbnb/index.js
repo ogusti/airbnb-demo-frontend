@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import homePicture from "./Home.png";
-import experiencesPicture from "./Experiences.png";
-import restarauntsPicture from "./Restaraunts.png";
+import homePicture from "./home.png";
+import experiencesPicture from "./experiences.png";
+import restarauntsPicture from "./restaraunts.png";
 import { Container, FluidContainer, ScrollContainer } from "../Containers";
 
 const Categories = styled.section`
