@@ -7,12 +7,8 @@ import ForestPicture from "./forest.png";
 import MountainPicture from "./mountain.png";
 import SalsaPicture from "./salsa.png";
 import SeaPicture from "./sea.png";
+import { RightButton, Headline, Link, TopRow, SeeAll } from "./Styled";
 import {
-  RightButton,
-  Headline,
-  Link,
-  TopRow,
-  SeeAll,
   TopInfo,
   Price,
   Description,
@@ -22,7 +18,7 @@ import {
   Reviews,
   Gallery,
   Card
-} from "./Styled";
+} from "../Card";
 
 export default function() {
   return (

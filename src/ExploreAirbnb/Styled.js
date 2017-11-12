@@ -1,12 +1,6 @@
 import styled from "styled-components";
 import ButtonArrow from "../buttonArrow.svg";
 
-export const Categories = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
 export const Title = styled.h1`
   font: 32px "CircularAir-Bold", sans-serif;
   line-height: 34px;
@@ -32,14 +26,5 @@ export const Wrapper = styled.section`
   @media only screen and (max-width: 400px) {
     flex-direction: column;
     align-items: left;
-  }
-`;
-
-export const Paragraph = styled.p`
-  margin-left: 24px;
-  @media only screen and (max-width: 400px) {
-    margin-left: 12px;
-    margin-top: 24px;
-    margin-bottom: 24px;
   }
 `;

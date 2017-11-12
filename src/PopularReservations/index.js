@@ -11,13 +11,11 @@ import {
   Headline,
   Link,
   SeeAll,
-  Card,
   Title,
   Wrapper,
-  Subheading,
-  Price,
   TopRow
 } from "./Styled";
+import { Card, Subheading, Price } from "../Card";
 
 export default function() {
   return (

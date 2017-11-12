@@ -8,17 +8,8 @@ import Miami from "./miami.png";
 import Paris from "./paris.png";
 import Seoul from "./seoul.png";
 import Tokyo from "./tokyo.png";
-import {
-  RightButton,
-  Headline,
-  Link,
-  TopRow,
-  SeeAll,
-  Gallery,
-  Card,
-  Title,
-  Wrapper
-} from "./Styled";
+import { Gallery, Card, Title } from "../Card";
+import { RightButton, Headline, TopRow, SeeAll, Wrapper, Link } from "./Styled";
 
 class App extends Component {
   render() {

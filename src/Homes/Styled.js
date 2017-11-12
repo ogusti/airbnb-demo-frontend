@@ -36,48 +36,7 @@ export const TopRow = styled.div`
   margin-top: 48px;
   margin-bottom: 24px;
 `;
-export const Gallery = styled.div`
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-`;
-export const Description = styled.p`
-  display: inline;
-  font-size: 15px;
-  /*text-overflow: ellipsis;
-  white-space: nowrap*/
-`;
-export const TopInfo = styled.div`
-  margin-top: 7px;
-  text-align: left;
-  font-weight: bold;
-`;
-export const Price = styled.div`
-  display: inline-block;
-  margin-right: 5px;
-  font-size: 15px;
-  font-weight: bold;
-`;
-export const MiddleInfo = styled.div`
-  text-align: left;
-  margin-top: 7px;
-`;
-export const BottomInfo = styled.div`text-align: left;`;
-
-export const Stars = styled.div`
-  display: inline-block;
-  margin-right: 5px;
-  margin-top: 7px;
-`;
-
-export const Star = styled.img`margin: 7px 4px 0 0;`;
-
-export const Card = styled.div`margin-right: 17px;`;
 
 export const Wrapper = styled.div`margin-right: 17px;`;
 
 export const SeeAll = styled.div`margin: auto 0;`;
-
-export const Dot = styled.span``;
-
-export const DopInfo = styled.span`font-size: 12px;`;

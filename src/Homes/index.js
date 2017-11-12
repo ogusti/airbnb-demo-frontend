@@ -8,25 +8,19 @@ import SecondHome from "./salentina.png";
 import ThirdHome from "./tropical.png";
 import StarPicture from "../star.svg";
 import {
-  RightButton,
-  Headline,
-  Link,
-  TopRow,
-  SeeAll,
-  Gallery,
-  Card,
-  Title,
-  Wrapper,
-  Star,
-  Stars,
+  BottomInfo,
+  Description,
   Dot,
-  DopInfo,
+  SubInfo,
   MiddleInfo,
   TopInfo,
   Price,
-  Description,
-  BottomInfo
-} from "./Styled";
+  Star,
+  Stars,
+  Card,
+  Gallery
+} from "../Card";
+import { RightButton, Headline, Link, TopRow, SeeAll, Wrapper } from "./Styled";
 
 class App extends Component {
   render() {
@@ -64,9 +58,9 @@ class App extends Component {
                     <Star src={StarPicture} alt="star" />
                     <Star src={StarPicture} alt="star" />
                   </Stars>
-                  <DopInfo>
+                  <SubInfo>
                     97 <Dot>·</Dot> Superhost
-                  </DopInfo>
+                  </SubInfo>
                 </BottomInfo>
               </Card>
               <Card>
@@ -88,9 +82,9 @@ class App extends Component {
                     <Star src={StarPicture} alt="star" />
                     <Star src={StarPicture} alt="star" />
                   </Stars>
-                  <DopInfo>
+                  <SubInfo>
                     97 <Dot>·</Dot> Superhost
-                  </DopInfo>
+                  </SubInfo>
                 </BottomInfo>
               </Card>
               <Card>
@@ -110,9 +104,9 @@ class App extends Component {
                     <Star src={StarPicture} alt="star" />
                     <Star src={StarPicture} alt="star" />
                   </Stars>
-                  <DopInfo>
+                  <SubInfo>
                     97 <Dot>·</Dot> Superhost
-                  </DopInfo>
+                  </SubInfo>
                 </BottomInfo>
               </Card>
             </Gallery>

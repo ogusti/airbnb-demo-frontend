@@ -32,28 +32,12 @@ export const Link = styled.a`
 
 export const Headline = styled.h2`font-size: 32px;`;
 
-export const Title = styled.h3`
-  font-size: 15px;
-  font-weight: bold;
-  text-align: left;
-  margin-top: 8px;
-  padding-bottom: 64px;
-`;
-
 export const TopRow = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 48px;
   margin-bottom: 24px;
 `;
-
-export const Gallery = styled.div`
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-`;
-
-export const Card = styled.div`margin-right: 17px;`;
 
 export const Wrapper = styled.div`margin-right: 17px;`;
 

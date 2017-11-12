@@ -31,15 +31,6 @@ export const Link = styled.a`
 `;
 export const Headline = styled.h2`font-size: 32px;`;
 
-export const Subheading = styled.p`
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 10px;
-  text-align: left;
-  margin-top: 12px;
-  margin-bottom: 5px;
-`;
-
 export const Title = styled.h3`
   font-size: 18px;
   font-weight: bold;
@@ -60,8 +51,6 @@ export const Price = styled.p`
   text-align: left;
   margin-top: 5px;
 `;
-
-export const Card = styled.div`margin-right: 17px;`;
 
 export const Wrapper = styled.div`margin-right: 17px;`;
 
