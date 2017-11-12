@@ -10,7 +10,7 @@ import German from "./german.png";
 
 const RightButton = styled.div`
   position: absolute;
-  right: 14.4%;
+  right: 0.4%;
   width: 40px;
   height: 40px;
   background-color: #fff;
@@ -23,7 +23,7 @@ const RightButton = styled.div`
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 
   @media only screen and (min-width: 1200px) {
-    top: 150.2%;
+    top: 73px;
   }
 
   @media only screen and (max-width: 1000px) {
@@ -60,11 +60,6 @@ const TopRow = styled.div`
   margin-top: 48px;
   margin-bottom: 24px;
 `;
-const Gallery = styled.div`
-  display: flex;
-  justify-content: space-between;
-  positon: relative;
-`;
 
 const Price = styled.p`
   display: block;
@@ -82,55 +77,59 @@ const SeeAll = styled.div`
   white-space: nowrap;
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <FluidContainer>
-          <Wrapper>
-            <TopRow>
-              <Headline>Popular reservations around the world</Headline>
-              <SeeAll>
-                <Link href="#">See all</Link>
-                <img src={Arrow} alt="more" />
-              </SeeAll>
-            </TopRow>
-          </Wrapper>
-        </FluidContainer>
-        <ScrollContainer>
-          <Container>
-            <Gallery>
-              <RightButton />
+export default function() {
+  return (
+    <div>
+      <FluidContainer>
+        <Wrapper>
+          <TopRow>
+            <Headline>Popular reservations around the world</Headline>
+            <SeeAll>
+              <Link href="#">See all</Link>
+              <img src={Arrow} alt="more" />
+            </SeeAll>
+          </TopRow>
+        </Wrapper>
+      </FluidContainer>
+      <ScrollContainer>
+        <Container>
+          <RightButton />
+          <div className="row">
+            <div className="col-xs-3">
               <Card>
                 <img src={Chum} alt="speakeasy" />
                 <WhatItIs>speakeasy</WhatItIs>
                 <Title>Chumley’s</Title>
                 <Price>About $60 per person</Price>
               </Card>
+            </div>
+            <div className="col-xs-3">
               <Card>
                 <img src={Korean} alt="hanjan" />
                 <WhatItIs>Korean gastropub</WhatItIs>
                 <Title>Hanjan</Title>
                 <Price>About $50 per person</Price>
               </Card>
+            </div>
+            <div className="col-xs-3">
               <Card>
                 <img src={German} alt="german american" />
                 <WhatItIs>German american</WhatItIs>
                 <Title>Prime Meats</Title>
                 <Price>About $55 per person</Price>
               </Card>
+            </div>
+            <div className="col-xs-3">
               <Card>
                 <img src={SeaFood} alt="seafood" />
                 <WhatItIs>Fine seafood</WhatItIs>
                 <Title>Seaprice</Title>
                 <Price>About $70 per person</Price>
               </Card>
-            </Gallery>
-          </Container>
-        </ScrollContainer>
-      </div>
-    );
-  }
+            </div>
+          </div>
+        </Container>
+      </ScrollContainer>
+    </div>
+  );
 }
-
-export default App;

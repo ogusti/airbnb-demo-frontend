@@ -32,6 +32,7 @@ const Rights = styled.div`
   font-size: 12px;
   margin-left: 13px;
 `;
+
 const Title = styled.h3`
   font-size: 18px;
   font-weight: bold;

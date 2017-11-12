@@ -38,6 +38,7 @@ const Link = styled.a`
   padding-right: 10px;
   display: inline-block;
 `;
+
 const Headline = styled.h2`font-size: 32px;`;
 
 const Title = styled.h3`
@@ -54,6 +55,7 @@ const TopRow = styled.div`
   margin-top: 48px;
   margin-bottom: 24px;
 `;
+
 const Gallery = styled.div`
   display: flex;
   justify-content: space-between;
@@ -64,7 +66,10 @@ const Card = styled.div`margin-right: 17px;`;
 
 const Wrapper = styled.div`margin-right: 17px;`;
 
-const SeeAll = styled.div`margin: auto 0;`;
+const SeeAll = styled.div`
+  margin: auto 0;
+  white-space: nowrap;
+`;
 
 class App extends Component {
   render() {
