@@ -18,6 +18,10 @@ export const RightButton = styled.div`
   @media only screen and (min-width: 1200px) {
     top: 73px;
   }
+  @media only screen and (max-width: 1200px) {
+    top: 55px;
+    right: -12px;
+  }
 
   @media only screen and (max-width: 1000px) {
     display: none;
