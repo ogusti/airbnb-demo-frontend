@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ButtonArrow from "../buttonArrow.svg";
+import ButtonArrow from "./buttonArrow.svg";
 
 export const Title = styled.h1`
   font: 32px "CircularAir-Bold", sans-serif;

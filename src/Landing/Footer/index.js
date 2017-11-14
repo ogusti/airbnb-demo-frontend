@@ -4,7 +4,6 @@ import twitter from "./twitter.svg";
 import facebook from "./facebook.svg";
 import instagram from "./instagram.png";
 import logo from "./logo.svg";
-import downarrow from "./downarrow.svg";
 import {
   Footer,
   Content,

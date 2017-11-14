@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { Container, FluidContainer, ScrollContainer } from "../Containers";
-import Arrow from "../arrow.svg";
-import ButtonArrow from "../buttonArrow.svg";
+import { Container, FluidContainer, ScrollContainer } from "./Containers";
+import Arrow from "./arrow.svg";
+import ButtonArrow from "./buttonArrow.svg";
 import styled from "styled-components";
 import FirstHome from "./private.png";
 import SecondHome from "./salentina.png";
 import ThirdHome from "./tropical.png";
-import StarPicture from "../star.svg";
+import StarPicture from "./star.svg";
 import {
   BottomInfo,
   Description,
@@ -19,7 +19,7 @@ import {
   Stars,
   Card,
   Gallery
-} from "../Card";
+} from "./Card";
 import { RightButton, Headline, Link, TopRow, SeeAll, Wrapper } from "./Styled";
 
 class App extends Component {

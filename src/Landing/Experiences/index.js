@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, FluidContainer, ScrollContainer } from "../Containers";
-import Arrow from "../arrow.svg";
-import StarPicture from "../star.svg";
+import { Container, FluidContainer, ScrollContainer } from "./Containers";
+import Arrow from "./arrow.svg";
+import StarPicture from "./star.svg";
 import ForestPicture from "./forest.png";
 import MountainPicture from "./mountain.png";
 import SalsaPicture from "./salsa.png";
@@ -18,7 +18,7 @@ import {
   Reviews,
   Gallery,
   Card
-} from "../Card";
+} from "./Card";
 
 export default function() {
   return (

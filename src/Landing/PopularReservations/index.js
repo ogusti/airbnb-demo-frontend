@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Container, FluidContainer, ScrollContainer } from "../Containers";
-import Arrow from "../arrow.svg";
+import { Container, FluidContainer, ScrollContainer } from "./Containers";
+import Arrow from "./arrow.svg";
 import styled from "styled-components";
 import Chum from "./chum.png";
 import Korean from "./korean.png";
@@ -15,7 +15,7 @@ import {
   Wrapper,
   TopRow
 } from "./Styled";
-import { Card, Subheading, Price } from "../Card";
+import { Card, Subheading, Price } from "./Card";
 
 export default function() {
   return (

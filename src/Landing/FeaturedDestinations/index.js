@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Arrow from "../arrow.svg";
-import { Container, FluidContainer, ScrollContainer } from "../Containers";
+import Arrow from "./arrow.svg";
+import { Container, FluidContainer, ScrollContainer } from "./Containers";
 import styled from "styled-components";
 import CapeTown from "./capetown.png";
 import LosAngeles from "./losAngeles.png";
@@ -8,7 +8,7 @@ import Miami from "./miami.png";
 import Paris from "./paris.png";
 import Seoul from "./seoul.png";
 import Tokyo from "./tokyo.png";
-import { Gallery, Card, Title } from "../Card";
+import { Gallery, Card, Title } from "./Card";
 import { RightButton, Headline, TopRow, SeeAll, Wrapper, Link } from "./Styled";
 
 class App extends Component {

@@ -3,9 +3,9 @@ import styled from "styled-components";
 import homePicture from "./home.png";
 import experiencesPicture from "./experiences.png";
 import restarauntsPicture from "./restaraunts.png";
-import { Container, FluidContainer, ScrollContainer } from "../Containers";
+import { Container, FluidContainer, ScrollContainer } from "./Containers";
 import { Title, Img, Wrapper } from "./Styled";
-import { Categories, Paragraph } from "../Card";
+import { Categories, Paragraph } from "./Card";
 
 export default function() {
   return (
