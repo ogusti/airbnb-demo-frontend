@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ButtonArrow from "./buttonArrow.svg";
+import ButtonArrow from "../../UI/buttonArrow.svg";
 
 export const Title = styled.h1`
   font: 32px "CircularAir-Bold", sans-serif;
@@ -23,6 +23,9 @@ export const Wrapper = styled.section`
   border: 1px solid rgba(72, 72, 72, 0.2);
   border-radius: 5px;
   overflow: hidden;
+
+  /*  cursor: pointer; */
+
   @media only screen and (max-width: 400px) {
     flex-direction: column;
     align-items: left;

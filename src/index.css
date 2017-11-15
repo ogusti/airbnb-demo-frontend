@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "CircularAir-Book", sans-serif;
+  color: #383838;
 }
 
 img {
@@ -20,7 +21,7 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #383838;
 }
 
 @media only screen and (max-width: 1200px) {

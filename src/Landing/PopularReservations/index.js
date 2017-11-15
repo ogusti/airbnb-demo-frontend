@@ -1,6 +1,10 @@
 import React, { Component } from "react";
-import { Container, FluidContainer, ScrollContainer } from "./Containers";
-import Arrow from "./arrow.svg";
+import {
+  Container,
+  FluidContainer,
+  ScrollContainer
+} from "../../UI/Containers";
+import Arrow from "../../UI/arrow.svg";
 import styled from "styled-components";
 import Chum from "./chum.png";
 import Korean from "./korean.png";
@@ -15,7 +19,13 @@ import {
   Wrapper,
   TopRow
 } from "./Styled";
-import { Card, Subheading, Price } from "./Card";
+import { Card, Subheading, Price } from "../../UI/Card";
+
+const ThinPrice = Price.extend`
+  font-family: "CircularAir-Light";
+  margin-top: 4px;
+  font-size: 18px;
+`;
 
 export default function() {
   return (
@@ -40,7 +50,7 @@ export default function() {
                 <img src={Chum} alt="speakeasy" />
                 <Subheading>speakeasy</Subheading>
                 <Title>Chumley’s</Title>
-                <Price>About $60 per person</Price>
+                <ThinPrice>About $60 per person</ThinPrice>
               </Card>
             </div>
             <div className="col-xs-3">
@@ -48,7 +58,7 @@ export default function() {
                 <img src={Korean} alt="hanjan" />
                 <Subheading>Korean gastropub</Subheading>
                 <Title>Hanjan</Title>
-                <Price>About $50 per person</Price>
+                <ThinPrice>About $50 per person</ThinPrice>
               </Card>
             </div>
             <div className="col-xs-3">
@@ -56,7 +66,7 @@ export default function() {
                 <img src={German} alt="german american" />
                 <Subheading>German american</Subheading>
                 <Title>Prime Meats</Title>
-                <Price>About $55 per person</Price>
+                <ThinPrice>About $55 per person</ThinPrice>
               </Card>
             </div>
             <div className="col-xs-3">
@@ -64,7 +74,7 @@ export default function() {
                 <img src={SeaFood} alt="seafood" />
                 <Subheading>Fine seafood</Subheading>
                 <Title>Seaprice</Title>
-                <Price>About $70 per person</Price>
+                <ThinPrice>About $70 per person</ThinPrice>
               </Card>
             </div>
           </div>

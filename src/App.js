@@ -4,6 +4,7 @@ import { render } from "react-dom";
 import "./fonts.css";
 import Header from "./Header";
 import Landing from "./Landing";
+import Homes from "./Homes";
 import styled from "styled-components";
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <div>
           <Header />
           <Route path="/" exact component={Landing} />
+          <Route path="/Homes" component={Homes} />
         </div>
       </Router>
     );

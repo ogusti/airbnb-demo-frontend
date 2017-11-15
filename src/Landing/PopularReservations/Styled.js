@@ -1,4 +1,4 @@
-import ButtonArrow from "./buttonArrow.svg";
+import ButtonArrow from "../../UI/buttonArrow.svg";
 import styled from "styled-components";
 
 export const RightButton = styled.div`

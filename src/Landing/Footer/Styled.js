@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import downarrow from "./downarrow.svg";
+import downarrow from "../../UI/downarrow.svg";
 
 export const Footer = styled.footer`
   padding-top: 48px;

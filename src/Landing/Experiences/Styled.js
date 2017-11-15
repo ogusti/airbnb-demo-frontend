@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ButtonArrow from "./buttonArrow.svg";
+import ButtonArrow from "../../UI/buttonArrow.svg";
 
 export const RightButton = styled.div`
   position: absolute;

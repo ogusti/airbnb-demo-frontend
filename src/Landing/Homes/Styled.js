@@ -1,4 +1,4 @@
-import ButtonArrow from "./buttonArrow.svg";
+import ButtonArrow from "../../UI/buttonArrow.svg";
 import styled from "styled-components";
 
 export const RightButton = styled.div`
@@ -28,7 +28,10 @@ export const Link = styled.a`
   padding-right: 10px;
   display: inline-block;
 `;
-export const Headline = styled.h2`font-size: 32px;`;
+export const Headline = styled.h2`
+  font-size: 32px;
+  margin: 0;
+`;
 
 export const TopRow = styled.div`
   display: flex;
