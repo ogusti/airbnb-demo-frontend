@@ -10,15 +10,17 @@ import PopularReservations from "./PopularReservations";
 import FeaturedDestinations from "./FeaturedDestinations";
 import Footer from "./Footer";
 
+export const Landing = styled.div`margin-top: 105px;`;
+
 export default function() {
   return (
-    <div>
+    <Landing>
       <ExploreAirbnb />
       <Experiences />
       <Homes />
       <PopularReservations />
       <FeaturedDestinations />
       <Footer />
-    </div>
+    </Landing>
   );
 }

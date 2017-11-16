@@ -21,12 +21,13 @@ import {
   Star,
   Reviews,
   Gallery,
-  Card
+  Card,
+  About
 } from "../../UI/Card";
 
 export default function() {
   return (
-    <div className="container">
+    <div>
       <FluidContainer>
         <Card>
           <TopRow>
@@ -46,12 +47,12 @@ export default function() {
               <img src={ForestPicture} alt="forest" />
               <TopInfo>
                 <Price>$29</Price>
-                <Description>Forest therapy</Description>
+                <About>Forest therapy</About>
               </TopInfo>
               <BottomInfo>
                 <Stars>
                   <Star src={StarPicture} alt="star" />
-                  <Star src={StarPicture} alt="star" />
+                  <Star src={StarPicture} alt="stadr" />
                   <Star src={StarPicture} alt="star" />
                   <Star src={StarPicture} alt="star" />
                   <Star src={StarPicture} alt="star" />
@@ -63,7 +64,7 @@ export default function() {
               <img src={MountainPicture} alt="forest" />
               <TopInfo>
                 <Price>$69</Price>
-                <Description>While watching</Description>
+                <About>While watching</About>
               </TopInfo>
               <BottomInfo>
                 <Stars>
@@ -80,7 +81,7 @@ export default function() {
               <img src={SeaPicture} alt="forest" />
               <TopInfo>
                 <Price>$69</Price>
-                <Description>Table Mountain Summit, Cable Car Down</Description>
+                <About>Table Mountain Summit, Cable Car Down</About>
               </TopInfo>
               <BottomInfo>
                 <Stars>
@@ -97,7 +98,7 @@ export default function() {
               <img src={SalsaPicture} alt="forest" />
               <TopInfo>
                 <Price>$50</Price>
-                <Description>Forest Therapy</Description>
+                <About>Forest Therapy</About>
               </TopInfo>
               <BottomInfo>
                 <Stars>

@@ -19,6 +19,14 @@ export const Description = styled.p`
   white-space: nowrap*/
 `;
 
+export const About = styled.p`
+  display: inline;
+  font-size: 15px;
+  font-family: CircularAir-Light, sans-serif;
+  /*text-overflow: ellipsis;
+  white-space: nowrap*/
+`;
+
 export const BottomInfo = styled.div`text-align: left;`;
 
 export const Stars = styled.div`
@@ -43,6 +51,7 @@ export const Gallery = styled.div`
 export const Card = styled.div`margin-right: 17px;`;
 
 export const Paragraph = styled.p`
+  font-weight: bold;
   margin-left: 24px;
   @media only screen and (max-width: 400px) {
     margin-left: 12px;
@@ -71,6 +80,7 @@ export const SubInfo = styled.span`font-size: 12px;`;
 export const MiddleInfo = styled.div`
   text-align: left;
   margin-top: 7px;
+  font-family: CircularAir-Light, sans-serif;
 `;
 
 export const Subheading = styled.p`

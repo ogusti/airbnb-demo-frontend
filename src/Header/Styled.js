@@ -7,7 +7,14 @@ export const Header = styled.header`
   flex-direction: column;
   justify-content: center;
   border-bottom: 1px solid rgba(72, 72, 72, 0.2);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
 `;
+
+export const Logo = styled.img`max-width: none;`;
 
 export const Wrapper = styled.div`
   display: flex;
@@ -38,6 +45,7 @@ export const Input = styled.input`
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
+  white-space: nowrap;
 
   @media only screen and (max-width: 768px) {
     display: none;

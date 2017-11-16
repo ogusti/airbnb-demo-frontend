@@ -13,7 +13,7 @@ import { Categories, Paragraph } from "../../UI/Card";
 
 export default function() {
   return (
-    <div className="container">
+    <div>
       <FluidContainer>
         <Title>Explore Airbnb</Title>
       </FluidContainer>

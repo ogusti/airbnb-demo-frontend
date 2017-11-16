@@ -29,7 +29,7 @@ import { RightButton, Headline, Link, TopRow, SeeAll, Wrapper } from "./Styled";
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <FluidContainer>
           <Wrapper>
             <TopRow>

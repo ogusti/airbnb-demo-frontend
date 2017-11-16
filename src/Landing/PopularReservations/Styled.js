@@ -33,7 +33,10 @@ export const Link = styled.a`
   display: inline-block;
   color: black;
 `;
-export const Headline = styled.h2`font-size: 32px;`;
+export const Headline = styled.h2`
+  font-size: 32px;
+  margin: 0px;
+`;
 
 export const Title = styled.h3`
   font-size: 18px;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import twitter from "./twitter.svg";
 import facebook from "./facebook.svg";
-import instagram from "./instagram.png";
+import instagram from "./instagram.svg";
 import logo from "./logo.svg";
 import {
   Footer,
@@ -26,19 +26,11 @@ export default function() {
       <div className="container">
         <Content>
           <Select>
-            <OriginalSelect>
-              <option value="" />
-              <option value="" />
-            </OriginalSelect>
             <DesignedSelect>
-              <span>English</span>
+              <option value="">English</option>
             </DesignedSelect>
-            <OriginalSelect>
-              <option value="" />
-              <option value="" />
-            </OriginalSelect>
             <DesignedSelect>
-              <span>United States dollar</span>
+              <option value="">United State Dollars</option>
             </DesignedSelect>
           </Select>
           <BlockWithLinks>

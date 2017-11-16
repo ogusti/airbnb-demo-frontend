@@ -7,7 +7,10 @@ export const Dot = styled.span``;
 export const Card = styled.div`
   margin-right: 16px;
   margin-bottom: 40px;
+  height: auto;
 `;
+
+export const Img = styled.img``;
 
 export const TopInfo = styled.div`
   margin-top: 7px;
@@ -25,6 +28,7 @@ export const Star = styled.img`margin: 7px 4px 0 0;`;
 export const MiddleInfo = styled.div`
   text-align: left;
   margin-top: 7px;
+  font-family: CircularAir-Light, sans-serif;
 
   @media (min-width: 320px) {
     font-size: 13px;
@@ -36,6 +40,7 @@ export const MiddleInfo = styled.div`
 `;
 
 export const Description = styled.p`
+  font-weight: bold;
   display: inline;
   font-size: 15px;
   /*text-overflow: ellipsis;
@@ -56,7 +61,7 @@ export const SubInfo = styled.span`font-size: 12px;`;
 export default function(props) {
   return (
     <Card>
-      <img src={props.img} alt={props.alt} />
+      <Img src={props.img} alt={props.alt} />
       <TopInfo>
         <Price>${props.price}</Price>
         <Description>{props.description}</Description>

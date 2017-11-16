@@ -14,7 +14,19 @@ export const Button = styled.button`
 export const Filters = styled.div`
   border-bottom: 1px solid rgba(72, 72, 72, 0.2);
   padding: 12px 0;
-  margin-bottom: 24px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+  top: 80px;
+  white-space: nowrap;
+`;
+
+export const DesktopButtons = styled.div`
+  display: inline-block;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export default function() {
@@ -23,9 +35,11 @@ export default function() {
       <div className="container">
         <Button>Dates</Button>
         <Button>Guest</Button>
-        <Button>Room types</Button>
-        <Button>Price</Button>
-        <Button>Instant book</Button>
+        <DesktopButtons>
+          <Button>Room types</Button>
+          <Button>Price</Button>
+          <Button>Instant book</Button>
+        </DesktopButtons>
         <Button>More filters</Button>
       </div>
     </Filters>

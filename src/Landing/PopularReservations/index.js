@@ -22,9 +22,10 @@ import {
 import { Card, Subheading, Price } from "../../UI/Card";
 
 const ThinPrice = Price.extend`
-  font-family: "CircularAir-Light";
   margin-top: 4px;
   font-size: 18px;
+  font-family: CircularAir-Light, sans-serif;
+  font-weight: normal;
 `;
 
 export default function() {

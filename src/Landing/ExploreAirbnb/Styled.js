@@ -12,8 +12,8 @@ export const Img = styled.img`
   width: 96px;
   height: 72px;
   @media only screen and (max-width: 400px) {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
   }
 `;
 

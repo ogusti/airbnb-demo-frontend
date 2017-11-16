@@ -4,10 +4,10 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   @media (min-width: 992px) {
-    margin: 0;
     height: 100%;
     width: 100%;
-    margin-top: -25px;
+    position: fixed;
+    top: 137px;
   }
 `;
 

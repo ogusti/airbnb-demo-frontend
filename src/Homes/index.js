@@ -13,20 +13,11 @@ import home4 from "./home4.png";
 import home5 from "./home5.png";
 import home6 from "./home6.png";
 
-const Wrapper = styled.div`
-  @media (min-width: 320px) {
-    padding-bottom: 24px;
-  }
-
-  @media (min-width: 768px) {
-    padding-bottom: 40px;
-  }
-`;
-
 export const Gallery = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 162px;
 `;
 
 export default function() {
@@ -44,63 +35,63 @@ export default function() {
                 alt="La Salentina"
                 type="Entire house"
                 beds="9 beds"
-                sub="9"
+                sub="97"
               />
 
               <Card
                 price={82}
-                description="La Salentina, see, nature & relax"
+                description="Your private 3 bedr. riad and exclusi…"
                 img={home2}
                 alt="La Salentina"
                 type="Entire house"
-                beds="9 beds"
-                sub="9"
+                beds="5 beds"
+                sub="161"
               />
 
               <Card
-                price={82}
-                description="La Salentina, see, nature & relax"
+                price={200}
+                description="Dreamy Tropical Tree House"
                 img={home3}
-                alt="La Salentina"
-                type="Entire house"
-                beds="9 beds"
-                sub="9"
+                alt="Tropical Tree House"
+                type="Entrie treehouse"
+                beds="1 bed"
+                sub="364"
               />
 
               <Card
-                price={82}
-                description="La Salentina, see, nature & relax"
+                price={110}
+                description="Best location old town luxury loft"
                 img={home4}
-                alt="La Salentina"
-                type="Entire house"
-                beds="9 beds"
-                sub="9"
+                alt="Old town luxury loft"
+                type="Entrie apartment"
+                beds="1 bed"
+                sub="369"
               />
 
               <Card
-                price={82}
-                description="La Salentina, see, nature & relax"
+                price={83}
+                description="Lussuoso. Vista incantevole."
                 img={home5}
-                alt="La Salentina"
-                type="Entire house"
-                beds="9 beds"
-                sub="9"
+                alt="Lussuoso"
+                type="Entire apartment"
+                beds="6 bed"
+                sub="105"
               />
 
               <Card
-                price={82}
-                description="La Salentina, see, nature & relax"
+                price={72}
+                description="In the historical center of Lecce"
                 img={home6}
-                alt="La Salentina"
+                alt="Historical center of Lecce"
                 type="Entire house"
-                beds="9 beds"
-                sub="9"
+                beds="3 beds"
+                sub="221"
               />
             </Gallery>
             <PageBar />
           </div>
           <div className="col-lg-4">
-            <Map center={{ lat: 30, lng: 20 }} zoom={1} />
+            <Map center={{ lat: 55, lng: 30 }} zoom={7} />
           </div>
         </div>
       </div>
