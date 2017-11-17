@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import styled from "styled-components";
 import Card from "./Card";
-import Map from "./Map";
+import MapReact from "./MapReact";
 import Filters from "./Filters.js";
 import PageBar from "./PageBar.js";
 
@@ -91,7 +91,7 @@ export default function() {
             <PageBar />
           </div>
           <div className="col-lg-4">
-            <Map center={{ lat: 61, lng: 24 }} zoom={9} />
+            <MapReact center={{ lat: 61, lng: 24 }} zoom={9} />
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import {
   Header,
   LogoSearch,
@@ -10,12 +11,17 @@ import {
   BlockWithLinks,
   Title,
   LinkList,
-  Link,
   Wrapper,
   Logo,
   Rights,
   Nav
 } from "./Styled";
+
+export const ReactRouterLink = styled(Link)`
+  text-decoration: none;
+  margin-left: 25px;
+`;
+export const ReactRouterLogoLink = styled(Link)``;
 
 export default function() {
   return (
@@ -24,17 +30,17 @@ export default function() {
         <Wrapper>
           <div className="col-md-7 col-lg-6">
             <LogoSearch>
-              <Link href="/">
+              <ReactRouterLogoLink to="/">
                 <Logo src={logo} alt="logo" />
-              </Link>
+              </ReactRouterLogoLink>
               <Input type="text" placeholder="Try &quot;Miami&quot;" />
             </LogoSearch>
           </div>
           <Nav>
-            <Link href="">Become a host</Link>
-            <Link href="">Help</Link>
-            <Link href="">Sign Up</Link>
-            <Link href="">Log In</Link>
+            <ReactRouterLink to="/">Become a host</ReactRouterLink>
+            <ReactRouterLink to="/">Help</ReactRouterLink>
+            <ReactRouterLink to="/">Sign Up</ReactRouterLink>
+            <ReactRouterLink to="/">Log In</ReactRouterLink>
           </Nav>
         </Wrapper>
       </div>

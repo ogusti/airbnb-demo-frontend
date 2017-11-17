@@ -24,10 +24,6 @@ export const RightButton = styled.div`
   }
 `;
 
-export const Link = styled.a`
-  padding-right: 10px;
-  display: inline-block;
-`;
 export const Headline = styled.h2`
   font-size: 32px;
   margin: 0;

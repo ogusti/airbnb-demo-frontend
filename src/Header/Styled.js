@@ -51,8 +51,3 @@ export const Nav = styled.nav`
     display: none;
   }
 `;
-
-export const Link = styled.a`
-  text-decoration: none;
-  margin-left: 25px;
-`;
