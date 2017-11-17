@@ -42,4 +42,7 @@ export const TopRow = styled.div`
   margin-bottom: 24px;
 `;
 
-export const SeeAll = styled.div`margin: auto 0;`;
+export const SeeAll = styled.div`
+  margin: auto 0;
+  white-space: nowrap;
+`;

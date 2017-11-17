@@ -24,9 +24,9 @@ export default function() {
         <Wrapper>
           <div className="col-md-7 col-lg-6">
             <LogoSearch>
-              <a href="/">
+              <Link href="/">
                 <Logo src={logo} alt="logo" />
-              </a>
+              </Link>
               <Input type="text" placeholder="Try &quot;Miami&quot;" />
             </LogoSearch>
           </div>

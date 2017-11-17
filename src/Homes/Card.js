@@ -4,13 +4,12 @@ import StarPicture from "../UI/star.svg";
 
 export const Dot = styled.span``;
 
-export const Card = styled.div`
-  margin-right: 16px;
-  margin-bottom: 40px;
-  height: auto;
-`;
+export const Card = styled.div`margin-bottom: 40px;`;
 
-export const Img = styled.img``;
+export const Img = styled.img`
+  width: 100%;
+  height: 100%;
+`;
 
 export const TopInfo = styled.div`
   margin-top: 7px;
@@ -60,27 +59,29 @@ export const SubInfo = styled.span`font-size: 12px;`;
 
 export default function(props) {
   return (
-    <Card>
-      <Img src={props.img} alt={props.alt} />
-      <TopInfo>
-        <Price>${props.price}</Price>
-        <Description>{props.description}</Description>
-      </TopInfo>
-      <MiddleInfo>
-        {props.type} <Dot>·</Dot> {props.beds}
-      </MiddleInfo>
-      <BottomInfo>
-        <Stars>
-          <Star src={StarPicture} alt="star" />
-          <Star src={StarPicture} alt="star" />
-          <Star src={StarPicture} alt="star" />
-          <Star src={StarPicture} alt="star" />
-          <Star src={StarPicture} alt="star" />
-        </Stars>
-        <SubInfo>
-          {props.sub} <Dot>·</Dot> Superhost
-        </SubInfo>
-      </BottomInfo>
-    </Card>
+    <div className="col-xs-12 col-md-6 col-lg-6">
+      <Card>
+        <Img src={props.img} alt={props.alt} />
+        <TopInfo>
+          <Price>${props.price}</Price>
+          <Description>{props.description}</Description>
+        </TopInfo>
+        <MiddleInfo>
+          {props.type} <Dot>·</Dot> {props.beds}
+        </MiddleInfo>
+        <BottomInfo>
+          <Stars>
+            <Star src={StarPicture} alt="star" />
+            <Star src={StarPicture} alt="star" />
+            <Star src={StarPicture} alt="star" />
+            <Star src={StarPicture} alt="star" />
+            <Star src={StarPicture} alt="star" />
+          </Stars>
+          <SubInfo>
+            {props.sub} <Dot>·</Dot> Superhost
+          </SubInfo>
+        </BottomInfo>
+      </Card>
+    </div>
   );
 }

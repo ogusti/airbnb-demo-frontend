@@ -26,7 +26,6 @@ export const Wrapper = styled.div`
 export const Logo = styled.div`
   display: flex;
   align-items: center;
-  max-width: none;
   @media (max-width: 400px) {
     margin-left: 30px;
   }

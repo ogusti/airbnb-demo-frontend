@@ -21,6 +21,7 @@ export const Link = styled.a`
   &:last-child {
     border: 1px solid #008489;
     border-radius: 50%;
+    line-height: 28px;
   }
 `;
 

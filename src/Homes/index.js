@@ -26,7 +26,7 @@ export default function() {
       <Filters />
       <div className="container">
         <div className="row">
-          <div className="col-md-8 col-lg-8">
+          <div className="col-xs-12 col-lg-8">
             <Gallery>
               <Card
                 price={82}
@@ -35,7 +35,7 @@ export default function() {
                 alt="La Salentina"
                 type="Entire house"
                 beds="9 beds"
-                sub="97"
+                sub={97}
               />
 
               <Card
@@ -45,7 +45,7 @@ export default function() {
                 alt="La Salentina"
                 type="Entire house"
                 beds="5 beds"
-                sub="161"
+                sub={161}
               />
 
               <Card
@@ -55,7 +55,7 @@ export default function() {
                 alt="Tropical Tree House"
                 type="Entrie treehouse"
                 beds="1 bed"
-                sub="364"
+                sub={364}
               />
 
               <Card
@@ -65,7 +65,7 @@ export default function() {
                 alt="Old town luxury loft"
                 type="Entrie apartment"
                 beds="1 bed"
-                sub="369"
+                sub={369}
               />
 
               <Card
@@ -75,7 +75,7 @@ export default function() {
                 alt="Lussuoso"
                 type="Entire apartment"
                 beds="6 bed"
-                sub="105"
+                sub={105}
               />
 
               <Card
@@ -85,13 +85,13 @@ export default function() {
                 alt="Historical center of Lecce"
                 type="Entire house"
                 beds="3 beds"
-                sub="221"
+                sub={221}
               />
             </Gallery>
             <PageBar />
           </div>
           <div className="col-lg-4">
-            <Map center={{ lat: 55, lng: 30 }} zoom={7} />
+            <Map center={{ lat: 61, lng: 24 }} zoom={9} />
           </div>
         </div>
       </div>
