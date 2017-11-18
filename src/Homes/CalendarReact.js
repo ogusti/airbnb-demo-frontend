@@ -19,23 +19,13 @@ const Mobile = props => <Responsive {...props} maxWidth={767} />;
 export default props => (
   <div>
     <Desktop>
-      <DayPickerRangeController
-        numberOfMonths={2}
-        isDayBlocked={day => day.isBefore(moment(), "day")}
-      />
+      <DayPickerRangeController numberOfMonths={2} />
     </Desktop>
     <Tablet>
-      <DayPickerRangeController
-        numberOfMonths={1}
-        isDayBlocked={day => day.isBefore(moment(), "day")}
-      />
+      <DayPickerRangeController numberOfMonths={1} />
     </Tablet>
     <Mobile>
-      <DayPickerRangeController
-        numberOfMonths={2}
-        orientation="vertical"
-        isDayBlocked={day => day.isBefore(moment(), "day")}
-      />
+      <DayPickerRangeController numberOfMonths={2} orientation="vertical" />
     </Mobile>
   </div>
 );

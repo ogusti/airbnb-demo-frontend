@@ -36,7 +36,6 @@ const ModalWrapper = styled.div`
 const Footer = styled.div`
   width: 100%;
   display: flex;
-  margin-top: -24px;
   justify-content: space-between;
 `;
 
