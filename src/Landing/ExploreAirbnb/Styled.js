@@ -6,6 +6,7 @@ export const Title = styled.h1`
   line-height: 34px;
   margin-top: 48px;
   margin-bottom: 24px;
+  font-weight: bold;
 `;
 
 export const Img = styled.img`

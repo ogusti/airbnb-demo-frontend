@@ -11,22 +11,17 @@ export const Img = styled.img`
   height: 100%;
 `;
 
-export const TopInfo = styled.div`
-  margin-top: 7px;
-  text-align: left;
-`;
+export const TopInfo = styled.div`text-align: left;`;
 
 export const Stars = styled.div`
   display: inline-block;
   margin-right: 5px;
-  margin-top: 7px;
 `;
 
-export const Star = styled.img`margin: 7px 4px 0 0;`;
+export const Star = styled.img`margin-right: 4px;`;
 
 export const MiddleInfo = styled.div`
   text-align: left;
-  margin-top: 7px;
   font-family: CircularAir-Light, sans-serif;
 
   @media (min-width: 320px) {
@@ -53,7 +48,10 @@ export const Price = styled.div`
   font-weight: bold;
 `;
 
-export const BottomInfo = styled.div`text-align: left;`;
+export const BottomInfo = styled.div`
+  text-align: left;
+  margin-top: 6px;
+`;
 
 export const SubInfo = styled.span`font-size: 12px;`;
 

@@ -1,27 +1,14 @@
 import React from "react";
 import logo from "./logo.svg";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import {
-  Header,
-  LogoSearch,
-  Input,
-  OriginalSelect,
-  DesignedSelect,
-  BlockWithLinks,
-  Title,
-  LinkList,
-  Wrapper,
-  Logo,
-  Rights,
-  Nav
-} from "./Styled";
+import { Link as RLink } from "react-router-dom";
+import { Header, LogoSearch, Input, Wrapper, Logo, Nav } from "./Styled";
 
-export const ReactRouterLink = styled(Link)`
+const Link = styled(RLink)`
   text-decoration: none;
   margin-left: 25px;
 `;
-export const ReactRouterLogoLink = styled(Link)``;
+const LogoLink = styled(RLink)``;
 
 export default function() {
   return (
@@ -30,17 +17,17 @@ export default function() {
         <Wrapper>
           <div className="col-md-7 col-lg-6">
             <LogoSearch>
-              <ReactRouterLogoLink to="/">
+              <LogoLink to="/">
                 <Logo src={logo} alt="logo" />
-              </ReactRouterLogoLink>
+              </LogoLink>
               <Input type="text" placeholder="Try &quot;Miami&quot;" />
             </LogoSearch>
           </div>
           <Nav>
-            <ReactRouterLink to="/">Become a host</ReactRouterLink>
-            <ReactRouterLink to="/">Help</ReactRouterLink>
-            <ReactRouterLink to="/">Sign Up</ReactRouterLink>
-            <ReactRouterLink to="/">Log In</ReactRouterLink>
+            <Link to="/">Become a host</Link>
+            <Link to="/">Help</Link>
+            <Link to="/">Sign Up</Link>
+            <Link to="/">Log In</Link>
           </Nav>
         </Wrapper>
       </div>

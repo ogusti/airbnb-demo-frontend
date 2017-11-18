@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import arrow from "./arrow.svg";
 
 export const Link = styled.a`
   display: block;
@@ -54,7 +55,9 @@ export default function() {
         <Link href="#">3</Link>
         <Link href="#">...</Link>
         <Link href="#">17</Link>
-        <Link href="#">></Link>
+        <Link href="#">
+          <img src={arrow} alt="next page" />
+        </Link>
       </NavigationList>
       <Interpretation>1 – 18 of 300+ Rentals</Interpretation>
       <Recommendation>

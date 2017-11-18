@@ -1,13 +1,10 @@
 import styled from "styled-components";
 
-export const TopInfo = styled.div`
-  margin-top: 7px;
-  text-align: left;
-`;
+export const TopInfo = styled.div`text-align: left;`;
 
 export const Price = styled.div`
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 8px;
   font-size: 15px;
   font-weight: bold;
 `;
@@ -15,6 +12,8 @@ export const Price = styled.div`
 export const Description = styled.p`
   display: inline;
   font-size: 15px;
+  font-weight: bold;
+
   /*text-overflow: ellipsis;
   white-space: nowrap*/
 `;
@@ -27,15 +26,17 @@ export const About = styled.p`
   white-space: nowrap*/
 `;
 
-export const BottomInfo = styled.div`text-align: left;`;
+export const BottomInfo = styled.div`
+  text-align: left;
+  margin-top: 6px;
+`;
 
 export const Stars = styled.div`
   display: inline-block;
   margin-right: 5px;
-  margin-top: 7px;
 `;
 
-export const Star = styled.img`margin: 7px 4px 0 0;`;
+export const Star = styled.img`margin-right: 4px;`;
 
 export const Reviews = styled.span`
   font-size: 12px;
@@ -69,7 +70,7 @@ export const Title = styled.h3`
   font-size: 15px;
   font-weight: bold;
   text-align: left;
-  margin-top: 8px;
+  margin-top: 5px;
   padding-bottom: 64px;
 `;
 
@@ -79,7 +80,6 @@ export const SubInfo = styled.span`font-size: 12px;`;
 
 export const MiddleInfo = styled.div`
   text-align: left;
-  margin-top: 7px;
   font-family: CircularAir-Light, sans-serif;
 `;
 
@@ -88,6 +88,6 @@ export const Subheading = styled.p`
   text-transform: uppercase;
   font-size: 10px;
   text-align: left;
-  margin-top: 12px;
-  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 `;

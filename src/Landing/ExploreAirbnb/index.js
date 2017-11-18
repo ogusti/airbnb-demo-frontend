@@ -10,6 +10,9 @@ import {
 } from "../../UI/Containers";
 import { Title, Img, Wrapper } from "./Styled";
 import { Categories, Paragraph } from "../../UI/Card";
+import { Link as RLink } from "react-router-dom";
+
+const Link = styled(RLink)``;
 
 export default function() {
   return (
@@ -22,22 +25,28 @@ export default function() {
           <Categories>
             <div className="row">
               <div className="col-xs-4">
-                <Wrapper>
-                  <Img src={homePicture} alt="Homes" />
-                  <Paragraph>Homes</Paragraph>
-                </Wrapper>
+                <Link to="/homes">
+                  <Wrapper>
+                    <Img src={homePicture} alt="Homes" />
+                    <Paragraph>Homes</Paragraph>
+                  </Wrapper>
+                </Link>
               </div>
               <div className="col-xs-4">
-                <Wrapper>
-                  <Img src={experiencesPicture} alt="Experiences" />
-                  <Paragraph>Experiences</Paragraph>
-                </Wrapper>
+                <Link to="/">
+                  <Wrapper>
+                    <Img src={experiencesPicture} alt="Experiences" />
+                    <Paragraph>Experiences</Paragraph>
+                  </Wrapper>
+                </Link>
               </div>
               <div className="col-xs-4">
-                <Wrapper>
-                  <Img src={restarauntsPicture} alt="Restaurants" />
-                  <Paragraph>Restaurants</Paragraph>
-                </Wrapper>
+                <Link to="/">
+                  <Wrapper>
+                    <Img src={restarauntsPicture} alt="Restaurants" />
+                    <Paragraph>Restaurants</Paragraph>
+                  </Wrapper>
+                </Link>
               </div>
             </div>
           </Categories>

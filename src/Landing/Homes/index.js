@@ -11,7 +11,7 @@ import FirstHome from "./private.png";
 import SecondHome from "./salentina.png";
 import ThirdHome from "./tropical.png";
 import StarPicture from "../../UI/star.svg";
-import { Link } from "react-router-dom";
+import { Link as RLink } from "react-router-dom";
 import {
   BottomInfo,
   Description,
@@ -27,7 +27,7 @@ import {
 } from "../../UI/Card";
 import { RightButton, Headline, TopRow, SeeAll, Wrapper } from "./Styled";
 
-export const ReactRouterLink = styled(Link)`
+const Link = styled(RLink)`
   padding-right: 10px;
   display: inline-block;
 `;
@@ -41,7 +41,7 @@ class App extends Component {
             <TopRow>
               <Headline>Homes</Headline>
               <SeeAll>
-                <ReactRouterLink to="/homes">See all</ReactRouterLink>
+                <Link to="/homes">See all</Link>
                 <img src={Arrow} alt="more" />
               </SeeAll>
             </TopRow>

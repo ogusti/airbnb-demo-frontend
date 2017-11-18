@@ -1,15 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-
-export const Button = styled.button`
-  padding: 7px 16px;
-  font: inherit;
-  font-size: 14px;
-  background-color: white;
-  border: 1px solid rgba(72, 72, 72, 0.2);
-  border-radius: 4px;
-  margin-right: 12px;
-`;
+import { DropDown } from "./DropDown";
+import CalendarReact from "./CalendarReact";
+import Responsive from "react-responsive";
 
 export const Filters = styled.div`
   border-bottom: 1px solid rgba(72, 72, 72, 0.2);
@@ -19,11 +12,11 @@ export const Filters = styled.div`
   width: 100%;
   background-color: white;
   top: 80px;
-  white-space: nowrap;
+  display: flex;
 `;
 
 export const DesktopButtons = styled.div`
-  display: inline-block;
+  display: inherit;
   @media (max-width: 768px) {
     display: none;
   }
@@ -31,17 +24,19 @@ export const DesktopButtons = styled.div`
 
 export default function() {
   return (
-    <Filters>
-      <div className="container">
-        <Button>Dates</Button>
-        <Button>Guest</Button>
+    <div className="container">
+      <Filters>
+        <DropDown name="Dates">
+          <CalendarReact />
+        </DropDown>
+        <DropDown name="Guest" />
         <DesktopButtons>
-          <Button>Room types</Button>
-          <Button>Price</Button>
-          <Button>Instant book</Button>
+          <DropDown name="Room type" />
+          <DropDown name="Price" />
+          <DropDown name="Instant book" />
         </DesktopButtons>
-        <Button>More filters</Button>
-      </div>
-    </Filters>
+        <DropDown name="More filters" />
+      </Filters>
+    </div>
   );
 }
