@@ -4,14 +4,14 @@ import downarrow from "../../UI/downarrow.svg";
 export const Footer = styled.footer`
   padding-top: 48px;
   border-top: 1px solid rgba(72, 72, 72, 0.2);
-  margin-bottom: 35px;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   border-top: 1px solid rgba(72, 72, 72, 0.2);
-  padding-top: 36px;
+  padding-top: 34px;
+  padding-bottom: 35px;
 
   @media (max-width: 768px) {
     font-size: 12px;
@@ -37,6 +37,7 @@ export const Nav = styled.nav`
   font-size: 15px;
   line-height: 18px;
   white-space: nowrap;
+  font-size: 15px;
   @media (max-width: 768px) {
     font-size: 12px;
     line-height: 14px;
@@ -47,7 +48,8 @@ export const Nav = styled.nav`
 `;
 
 export const Rights = styled.div`
-  font-size: 12px;
+  color: #636363;
+  font-size: 15px;
   font-weight: bold;
   margin-left: 13px;
   white-space: nowrap;

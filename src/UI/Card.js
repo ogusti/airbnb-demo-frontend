@@ -49,7 +49,7 @@ export const Gallery = styled.div`
   position: relative;
 `;
 
-export const Card = styled.div`margin-right: 17px;`;
+export const Card = styled.div`margin-right: 18px;`;
 
 export const Paragraph = styled.p`
   font-weight: bold;

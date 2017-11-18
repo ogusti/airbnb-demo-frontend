@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Button = styled.button`
-  padding: 7px 16px;
+  padding: 7px 15px;
   font: inherit;
   font-size: 14px;
   border: 1px solid rgba(72, 72, 72, 0.2);

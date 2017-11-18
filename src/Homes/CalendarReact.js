@@ -19,13 +19,34 @@ const Mobile = props => <Responsive {...props} maxWidth={767} />;
 export default props => (
   <div>
     <Desktop>
-      <DayPickerRangeController numberOfMonths={2} />
+      <DayPickerRangeController
+        hideKeyboardShortcutsPanel
+        initialVisibleMonth={null}
+        numberOfMonths={2}
+        onOutsideClick={this.onOutsideClick}
+        onPrevMonthClick={this.onPrevMonthClick}
+        onNextMonthClick={this.onNextMonthClick}
+      />
     </Desktop>
     <Tablet>
-      <DayPickerRangeController numberOfMonths={1} />
+      <DayPickerRangeController
+        hideKeyboardShortcutsPanel
+        initialVisibleMonth={null}
+        numberOfMonths={1}
+        onOutsideClick={this.onOutsideClick}
+        onPrevMonthClick={this.onPrevMonthClick}
+        onNextMonthClick={this.onNextMonthClick}
+      />
     </Tablet>
     <Mobile>
-      <DayPickerRangeController numberOfMonths={2} orientation="vertical" />
+      <DayPickerRangeController
+        hideKeyboardShortcutsPanel
+        numberOfMonths={2}
+        onOutsideClick={this.onOutsideClick}
+        onPrevMonthClick={this.onPrevMonthClick}
+        onNextMonthClick={this.onNextMonthClick}
+        orientation="verticalScrollable"
+      />
     </Mobile>
   </div>
 );

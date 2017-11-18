@@ -11,7 +11,10 @@ export const Img = styled.img`
   height: 100%;
 `;
 
-export const TopInfo = styled.div`text-align: left;`;
+export const TopInfo = styled.div`
+  text-align: left;
+  margin-top: -2px;
+`;
 
 export const Stars = styled.div`
   display: inline-block;
@@ -23,6 +26,7 @@ export const Star = styled.img`margin-right: 4px;`;
 export const MiddleInfo = styled.div`
   text-align: left;
   font-family: CircularAir-Light, sans-serif;
+  margin-top: 2px;
 
   @media (min-width: 320px) {
     font-size: 13px;
@@ -50,7 +54,7 @@ export const Price = styled.div`
 
 export const BottomInfo = styled.div`
   text-align: left;
-  margin-top: 6px;
+  margin-top: 4px;
 `;
 
 export const SubInfo = styled.span`font-size: 12px;`;
