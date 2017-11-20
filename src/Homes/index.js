@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import styled from "styled-components";
 import Card from "./Card";
-import MapReact from "./MapReact";
-import Filters from "./Filters.js";
+import MapReact from "./Map/MapReact";
+import Filters from "./Filters/Filters.js";
 import PageBar from "./PageBar.js";
+import "./Filters/Calendar/CalendarReactStyles.css";
 
 import home1 from "./home1.png";
 import home2 from "./home2.png";

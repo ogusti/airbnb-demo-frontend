@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { DropDown } from "./DropDown";
-import CalendarReact from "./CalendarReact";
 import Responsive from "react-responsive";
+import CalendarReact from "./Calendar/CalendarReact";
+import Guests from "./Guests";
 
 export const Filters = styled.div`
   border-bottom: 1px solid rgba(72, 72, 72, 0.2);
@@ -29,7 +30,9 @@ export default function() {
         <DropDown name="Dates">
           <CalendarReact />
         </DropDown>
-        <DropDown name="Guest" />
+        <DropDown name="Guest">
+          <Guests />
+        </DropDown>
         <DesktopButtons>
           <DropDown name="Room type" />
           <DropDown name="Price" />

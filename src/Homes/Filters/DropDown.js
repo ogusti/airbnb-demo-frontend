@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Button = styled.button`
-  padding: 7px 15px;
+  padding: 32px 55px;
   font: inherit;
-  font-size: 14px;
-  border: 1px solid rgba(72, 72, 72, 0.2);
-  border-radius: 4px;
-  margin-right: 12px;
+  font-size: 16px;
+  border: none;
+
+  outline: none;
 
   background-color: ${props => (props.isOpen ? "#008489" : "#fff")};
   color: ${props => (props.isOpen ? "#fff" : "#383838")};
@@ -23,6 +23,8 @@ const FilterItem = styled.button`
   border-radius: 4px;
   cursor: pointer;
   margin-right: 12px;
+
+  outline: none;
 `;
 
 const ModalWrapper = styled.div`

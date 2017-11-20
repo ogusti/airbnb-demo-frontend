@@ -6,15 +6,10 @@ import {
   SingleDatePicker,
   DayPickerRangeController
 } from "react-dates";
-import "react-dates/lib/css/_datepicker.css";
 import moment from "moment";
-import Responsive from "react-responsive";
-
-const Desktop = props => <Responsive {...props} minWidth={1124} />;
-const Tablet = props => (
-  <Responsive {...props} minWidth={768} maxWidth={1124} />
-);
-const Mobile = props => <Responsive {...props} maxWidth={767} />;
+import "react-dates/lib/css/_datepicker.css";
+import { Desktop, Mobile, Tablet } from "../../../UI/ReactResponsive";
+import MobileFullscreen from "./MobileFullscreen";
 
 export default props => (
   <div>
@@ -39,13 +34,16 @@ export default props => (
       />
     </Tablet>
     <Mobile>
-      <DayPickerRangeController
+      <MobileFullscreen
+        autoFocus
         hideKeyboardShortcutsPanel
-        numberOfMonths={2}
+        initialVisibleMonth={null}
+        numberOfMonths={12}
+        daySize={43}
+        orientation="verticalScrollable"
         onOutsideClick={this.onOutsideClick}
         onPrevMonthClick={this.onPrevMonthClick}
         onNextMonthClick={this.onNextMonthClick}
-        orientation="verticalScrollable"
       />
     </Mobile>
   </div>
