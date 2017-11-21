@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { DropDown } from "./DropDown";
 import Responsive from "react-responsive";
-import CalendarReact from "./Calendar/CalendarReact";
+import CalendarReact from "./Calendar";
 import Guests from "./Guests";
 import RoomType from "./RoomType";
 import Price from "./Price";

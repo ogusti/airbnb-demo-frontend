@@ -47,13 +47,11 @@ export class DropDown extends React.Component {
   };
 
   toggleOpen = e => {
-    !this.state.isOpen
-      ? this.setState({ isOpen: true })
-      : this.setState({ isOpen: false });
+    this.setState({ isOpen: !this.state.isOpen });
   };
+
   onApply = e => {
     this.setState({ isOpen: false });
-    alert("Apply");
   };
 
   render() {
