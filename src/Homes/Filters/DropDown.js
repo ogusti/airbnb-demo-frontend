@@ -13,7 +13,7 @@ const Button = styled.button`
   color: ${props => (props.isOpen ? "#fff" : "#383838")};
 `;
 
-const FilterItem = styled.button`
+const Filter = styled.button`
   padding: 7px 15px;
   border: 1px solid rgba(72, 72, 72, 0.2);
   font: 14px "CircularAir-Book", sans-serif;
@@ -46,20 +46,22 @@ export class DropDown extends React.Component {
     isOpen: false
   };
 
-  toggleOpen = () => {
-    if (this.state.isOpen) {
-      this.setState({ isOpen: false });
-    } else {
-      this.setState({ isOpen: true });
-    }
+  toggleOpen = e => {
+    !this.state.isOpen
+      ? this.setState({ isOpen: true })
+      : this.setState({ isOpen: false });
+  };
+  onApply = e => {
+    this.setState({ isOpen: false });
+    alert("Apply");
   };
 
   render() {
     return (
       <div>
-        <FilterItem onClick={this.toggleOpen} isOpen={this.state.isOpen}>
+        <Filter onClick={this.toggleOpen} isOpen={this.state.isOpen}>
           {this.state.isOpen ? "Check in — Check out " : this.props.name}
-        </FilterItem>
+        </Filter>
 
         {this.state.isOpen && (
           <ModalWrapper>

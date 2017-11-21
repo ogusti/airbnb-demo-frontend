@@ -4,6 +4,9 @@ import { DropDown } from "./DropDown";
 import Responsive from "react-responsive";
 import CalendarReact from "./Calendar/CalendarReact";
 import Guests from "./Guests";
+import RoomType from "./RoomType";
+import Price from "./Price";
+import InstantBook from "./InstantBook";
 
 export const Filters = styled.div`
   border-bottom: 1px solid rgba(72, 72, 72, 0.2);
@@ -30,13 +33,19 @@ export default function() {
         <DropDown name="Dates">
           <CalendarReact />
         </DropDown>
-        <DropDown name="Guest">
+        <DropDown name="Guests">
           <Guests />
         </DropDown>
         <DesktopButtons>
-          <DropDown name="Room type" />
-          <DropDown name="Price" />
-          <DropDown name="Instant book" />
+          <DropDown name="Room type">
+            <RoomType />
+          </DropDown>
+          <DropDown name="Price">
+            <Price />
+          </DropDown>
+          <DropDown name="Instant book">
+            <InstantBook />
+          </DropDown>
         </DesktopButtons>
         <DropDown name="More filters" />
       </Filters>

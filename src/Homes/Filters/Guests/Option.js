@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import minusImg from "./img/minus.svg";
-import plusImg from "./img/plus.svg";
+import minus from "./minus.svg";
+import plus from "./plus.svg";
 
 const Option = styled.div`
   display: flex;
@@ -11,14 +11,13 @@ const Option = styled.div`
 `;
 
 const Title = styled.div`
-  font-family: CircularAir, sans-serif;
   line-height: normal;
   font-size: 20px;
   color: #383838;
 `;
 
 const Note = styled.div`
-  font-family: CircularAir, sans-serif;
+  font-family: CircularAir-Light, sans-serif;
   line-height: normal;
   font-size: 16px;
   color: #383838;
@@ -26,16 +25,15 @@ const Note = styled.div`
   margin-top: 7px;
 `;
 
-const Stepper = styled.div`
+export const Options = styled.div`
   display: flex;
   align-items: center;
 `;
 
 const Button = styled.img`cursor: pointer;`;
 
-const Counter = styled.div`
-  font-family: CircularAir, sans-serif;
-  line-height: normal;
+const Number = styled.div`
+  font-family: CircularAir-Light, sans-serif;
   font-size: 18px;
   color: #383838;
   font-weight: 200;
@@ -48,10 +46,10 @@ export default props => (
       <Title>{props.title}</Title>
       {props.note && <Note>{props.note}</Note>}
     </div>
-    <Stepper>
-      <Button src={minusImg} />
-      <Counter>0</Counter>
-      <Button src={plusImg} />
-    </Stepper>
+    <Options>
+      <Button src={minus} />
+      <Number>0</Number>
+      <Button src={plus} />
+    </Options>
   </Option>
 );

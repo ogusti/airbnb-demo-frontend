@@ -1,53 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import minus from "./minus.svg";
-import plus from "./plus.svg";
+import Option from "./Option";
 
-const Value = styled.div`
-  display: flex;
-  justify-content: space-between;
-  background: #ffffff;
-  margin-top: 18px;
+const Wrapper = styled.div`
+  padding-left: 16px;
+  padding-right: 14px;
+  padding-top: 13px;
+  padding-bottom: 16px;
 `;
 
-const Title = styled.div`
-  line-height: normal;
-  font-size: 20px;
-  color: #383838;
-`;
-
-const Note = styled.div`
-  line-height: normal;
-  font-size: 16px;
-  color: #383838;
-  font-weight: 200;
-  margin-top: 7px;
-`;
-
-const Option = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const Button = styled.img`cursor: pointer;`;
-
-const Number = styled.div`
-  font-size: 18px;
-  color: #383838;
-  font-weight: 200;
-  padding: 0px 19px;
-`;
+const Infants = styled.div`padding-top: 5px;`;
 
 export default props => (
-  <Value>
-    <div>
-      <Title>{props.title}</Title>
-      {props.note && <Note>{props.note}</Note>}
-    </div>
-    <Option>
-      <Button src={minus} />
-      <Number>0</Number>
-      <Button src={plus} />
-    </Option>
-  </Value>
+  <Wrapper>
+    <Option title="Adults" />
+    <Option title="Children" note="Ages 2 — 12" />
+    <Infants>
+      <Option title="Infants" note="Under 2" />
+    </Infants>
+  </Wrapper>
 );
