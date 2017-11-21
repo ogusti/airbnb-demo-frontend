@@ -9,7 +9,6 @@ import Price from "./Price";
 import InstantBook from "./InstantBook";
 
 export const Filters = styled.div`
-  border-bottom: 1px solid rgba(72, 72, 72, 0.2);
   padding: 12px 0;
   position: fixed;
   z-index: 10;
@@ -26,29 +25,41 @@ export const DesktopButtons = styled.div`
   }
 `;
 
+const Wrapper = styled.div`
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 80px;
+  display: flex;
+  border-bottom: 1px solid rgba(72, 72, 72, 0.2);
+  height: 57px;
+`;
+
 export default function() {
   return (
-    <div className="container">
-      <Filters>
-        <DropDown name="Dates">
-          <CalendarReact />
-        </DropDown>
-        <DropDown name="Guests">
-          <Guests />
-        </DropDown>
-        <DesktopButtons>
-          <DropDown name="Room type">
-            <RoomType />
+    <Wrapper>
+      <div className="container">
+        <Filters>
+          <DropDown name="Dates">
+            <CalendarReact />
           </DropDown>
-          <DropDown name="Price">
-            <Price />
+          <DropDown name="Guests">
+            <Guests />
           </DropDown>
-          <DropDown name="Instant book">
-            <InstantBook />
-          </DropDown>
-        </DesktopButtons>
-        <DropDown name="More filters" />
-      </Filters>
-    </div>
+          <DesktopButtons>
+            <DropDown name="Room type">
+              <RoomType />
+            </DropDown>
+            <DropDown name="Price">
+              <Price />
+            </DropDown>
+            <DropDown name="Instant book">
+              <InstantBook />
+            </DropDown>
+          </DesktopButtons>
+          <DropDown name="More filters" />
+        </Filters>
+      </div>
+    </Wrapper>
   );
 }

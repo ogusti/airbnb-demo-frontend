@@ -13,7 +13,7 @@ export const Img = styled.img`
 
 export const TopInfo = styled.div`
   text-align: left;
-  margin-top: -2px;
+  margin-top: 1px;
 `;
 
 export const Stars = styled.div`
@@ -26,7 +26,7 @@ export const Star = styled.img`margin-right: 4px;`;
 export const MiddleInfo = styled.div`
   text-align: left;
   font-family: CircularAir-Light, sans-serif;
-  margin-top: 2px;
+  margin-top: 1px;
 
   @media (min-width: 320px) {
     font-size: 13px;
