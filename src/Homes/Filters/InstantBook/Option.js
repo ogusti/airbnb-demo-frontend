@@ -5,6 +5,7 @@ import plus from "./plus.svg";
 const Option = styled.div`
   margin-top: 24px;
   margin-left: 16px;
+  display: flex;
 `;
 
 const State = styled.div`
@@ -44,13 +45,16 @@ const Checkbox = styled.div`
   background: rgba(72, 72, 72, 0.08);
   border: 1px solid rgba(72, 72, 72, 0.3);
   box-sizing: border-box;
+  margin-top: 16px;
   border-radius: 24px;
 `;
 
 export default props => (
   <Option>
-    <Title>{props.title}</Title>
-    <Description>{props.description}</Description>
+    <div>
+      <Title>{props.title}</Title>
+      <Description>{props.description}</Description>
+    </div>
     <Checkbox>
       <State>
         <img src={plus} alt="plus" />

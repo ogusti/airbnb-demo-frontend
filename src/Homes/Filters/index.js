@@ -40,24 +40,24 @@ export default function() {
     <Wrapper>
       <div className="container">
         <Filters>
-          <DropDown name="Dates">
+          <DropDown name="Dates" subName="Check in — Check out">
             <CalendarReact />
           </DropDown>
-          <DropDown name="Guests">
+          <DropDown name="Guests" subName="Guests">
             <Guests />
           </DropDown>
           <DesktopButtons>
-            <DropDown name="Room type">
+            <DropDown name="Room type" subName="Room type">
               <RoomType />
             </DropDown>
-            <DropDown name="Price">
+            <DropDown name="Price" subName="Price">
               <Price />
             </DropDown>
-            <DropDown name="Instant book">
+            <DropDown name="Instant book" subName="Instant book">
               <InstantBook />
             </DropDown>
           </DesktopButtons>
-          <DropDown name="More filters" />
+          <DropDown name="More filters" subName="More filters" />
         </Filters>
       </div>
     </Wrapper>
