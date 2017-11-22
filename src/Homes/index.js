@@ -1,120 +1,101 @@
 import React, { Component } from "react";
-import { Container, FluidContainer, ScrollContainer } from "../Containers";
-import Arrow from "../arrow.svg";
-import ButtonArrow from "../buttonArrow.svg";
+import { render } from "react-dom";
 import styled from "styled-components";
-import FirstHome from "./private.png";
-import SecondHome from "./salentina.png";
-import ThirdHome from "./tropical.png";
-import StarPicture from "../star.svg";
-import {
-  BottomInfo,
-  Description,
-  Dot,
-  SubInfo,
-  MiddleInfo,
-  TopInfo,
-  Price,
-  Star,
-  Stars,
-  Card,
-  Gallery
-} from "../Card";
-import { RightButton, Headline, Link, TopRow, SeeAll, Wrapper } from "./Styled";
+import Card from "./Card";
+import MapReact from "./Map";
+import Filters from "./Filters";
+import PageBar from "./PageBar.js";
+import "./Filters/Calendar/CalendarReactStyles.css";
 
-class App extends Component {
-  render() {
-    return (
+import home1 from "./home1.png";
+import home2 from "./home2.png";
+import home3 from "./home3.png";
+import home4 from "./home4.png";
+import home5 from "./home5.png";
+import home6 from "./home6.png";
+
+export const Gallery = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 162px;
+`;
+
+export default function() {
+  return (
+    <div>
+      <Filters />
       <div className="container">
-        <FluidContainer>
-          <Wrapper>
-            <TopRow>
-              <Headline>Homes</Headline>
-              <SeeAll>
-                <Link href="#">See all</Link>
-                <img src={Arrow} alt="more" />
-              </SeeAll>
-            </TopRow>
-          </Wrapper>
-        </FluidContainer>
-        <ScrollContainer>
-          <Container>
+        <div className="row">
+          <div className="col-xs-12 col-lg-8">
             <Gallery>
-              <RightButton />
-              <Card>
-                <img src={FirstHome} alt="first home" />
-                <TopInfo>
-                  <Price>$82</Price>
-                  <Description>La Salentina, see, nature & relax</Description>
-                </TopInfo>
-                <MiddleInfo>
-                  Entire house <Dot>·</Dot> 9 beds
-                </MiddleInfo>
-                <BottomInfo>
-                  <Stars>
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                  </Stars>
-                  <SubInfo>
-                    97 <Dot>·</Dot> Superhost
-                  </SubInfo>
-                </BottomInfo>
-              </Card>
-              <Card>
-                <img src={SecondHome} alt="second home" />
-                <TopInfo>
-                  <Price>$82</Price>
-                  <Description>
-                    Your private 3 bedr. riad and exclusi…
-                  </Description>
-                </TopInfo>
-                <MiddleInfo>
-                  Entire house <Dot>·</Dot> 9 beds
-                </MiddleInfo>
-                <BottomInfo>
-                  <Stars>
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                  </Stars>
-                  <SubInfo>
-                    97 <Dot>·</Dot> Superhost
-                  </SubInfo>
-                </BottomInfo>
-              </Card>
-              <Card>
-                <img src={ThirdHome} alt="third home" />
-                <TopInfo>
-                  <Price>$200</Price>
-                  <Description>Dreamy Tropical Tree House</Description>
-                </TopInfo>
-                <MiddleInfo>
-                  Entire house <Dot>·</Dot> 9 beds
-                </MiddleInfo>
-                <BottomInfo>
-                  <Stars>
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                    <Star src={StarPicture} alt="star" />
-                  </Stars>
-                  <SubInfo>
-                    97 <Dot>·</Dot> Superhost
-                  </SubInfo>
-                </BottomInfo>
-              </Card>
-            </Gallery>
-          </Container>
-        </ScrollContainer>
-      </div>
-    );
-  }
-}
+              <Card
+                price={82}
+                description="La Salentina, see, nature & relax"
+                img={home1}
+                alt="La Salentina"
+                type="Entire house"
+                beds="9 beds"
+                sub={97}
+              />
 
-export default App;
+              <Card
+                price={82}
+                description="Your private 3 bedr. riad and exclusi…"
+                img={home2}
+                alt="La Salentina"
+                type="Entire house"
+                beds="5 beds"
+                sub={161}
+              />
+
+              <Card
+                price={200}
+                description="Dreamy Tropical Tree House"
+                img={home3}
+                alt="Tropical Tree House"
+                type="Entrie treehouse"
+                beds="1 bed"
+                sub={364}
+              />
+
+              <Card
+                price={110}
+                description="Best location old town luxury loft"
+                img={home4}
+                alt="Old town luxury loft"
+                type="Entrie apartment"
+                beds="1 bed"
+                sub={369}
+              />
+
+              <Card
+                price={83}
+                description="Lussuoso. Vista incantevole."
+                img={home5}
+                alt="Lussuoso"
+                type="Entire apartment"
+                beds="6 bed"
+                sub={105}
+              />
+
+              <Card
+                price={72}
+                description="In the historical center of Lecce"
+                img={home6}
+                alt="Historical center of Lecce"
+                type="Entire house"
+                beds="3 beds"
+                sub={221}
+              />
+            </Gallery>
+            <PageBar />
+          </div>
+          <div className="col-lg-4">
+            <MapReact center={{ lat: 61, lng: 24 }} zoom={9} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

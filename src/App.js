@@ -1,27 +1,22 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { render } from "react-dom";
 import "./fonts.css";
 import Header from "./Header";
-import ExploreAirbnb from "./ExploreAirbnb";
-import Experiences from "./Experiences";
+import Landing from "./Landing";
 import Homes from "./Homes";
-import PopularReservations from "./PopularReservations";
-import FeaturedDestinations from "./FeaturedDestinations";
-import { Container, FluidContainer, ScrollContainer } from "./Containers";
-import Footer from "./Footer";
 import styled from "styled-components";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <ExploreAirbnb />
-        <Experiences />
-        <Homes />
-        <PopularReservations />
-        <FeaturedDestinations />
-        <Footer />
-      </div>
+      <Router>
+        <div>
+          <Header />
+          <Route path="/" exact component={Landing} />
+          <Route path="/Homes" component={Homes} />
+        </div>
+      </Router>
     );
   }
 }

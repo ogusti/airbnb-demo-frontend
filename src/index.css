@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "CircularAir-Book", sans-serif;
+  color: #383838;
 }
 
 img {
@@ -20,7 +21,7 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #383838;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -29,9 +30,18 @@ a {
   }
 }
 
+h2 {
+  font-size: 32px;
+  line-height: 34px;
+}
+
 @media only screen and (max-width: 400px) {
   body {
     font-size: 12px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .hidden-sm {
