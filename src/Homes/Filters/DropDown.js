@@ -6,14 +6,11 @@ const Button = styled.button`
   font: inherit;
   font-size: 16px;
   border: none;
-
   outline: none;
-
-  background-color: ${props => (props.isOpen ? "#008489" : "#fff")};
-  color: ${props => (props.isOpen ? "#fff" : "#383838")};
+  background-color: white;
 `;
 
-const Filter = styled.button`
+export const Filter = styled.button`
   padding: 7px 15px;
   border: 1px solid rgba(72, 72, 72, 0.2);
   font: 14px "CircularAir-Book", sans-serif;
@@ -65,8 +62,8 @@ export class DropDown extends React.Component {
           <ModalWrapper>
             {this.props.children}
             <Footer>
-              <Button>Cancel</Button>
-              <Button isApply>Apply</Button>
+              <Button onClick={this.toggleOpen}>Cancel</Button>
+              <Button>Apply</Button>
             </Footer>
           </ModalWrapper>
         )}

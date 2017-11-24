@@ -35,6 +35,7 @@ const Description = styled.p`
   font-size: 14px;
   color: #383838;
   width: 200px;
+  white-space: normal;
 `;
 
 const Checkbox = styled.div`

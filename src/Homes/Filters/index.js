@@ -16,6 +16,7 @@ export const Filters = styled.div`
   background-color: white;
   top: 80px;
   display: flex;
+  white-space: nowrap;
 `;
 
 export const DesktopButtons = styled.div`
@@ -27,10 +28,9 @@ export const DesktopButtons = styled.div`
 
 const Wrapper = styled.div`
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
   top: 80px;
-  display: flex;
   border-bottom: 1px solid rgba(72, 72, 72, 0.2);
   height: 57px;
 `;

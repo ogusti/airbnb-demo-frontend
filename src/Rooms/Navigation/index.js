@@ -31,8 +31,6 @@ const NavigationButton = styled.button`
 `;
 
 const Dot = styled.span`
-  font-family: CircularAir;
-  line-height: normal;
   font-size: 12px;
   color: #0f7276;
   margin: 0px 8px;

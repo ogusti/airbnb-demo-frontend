@@ -11,6 +11,6 @@ export default props => (
     img={price}
     min={10}
     max={1000}
-    values={[10, 999]}
+    values={[10, 1000]}
   />
 );

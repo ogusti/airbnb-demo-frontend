@@ -39,6 +39,7 @@ const Description = styled.div`
   font-weight: 200;
   margin-left: 36px;
   margin-top: 2px;
+  white-space: normal;
 `;
 
 const Icon = styled.img`
