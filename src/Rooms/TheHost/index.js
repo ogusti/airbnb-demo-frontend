@@ -17,6 +17,18 @@ const MainTitle = styled.h2`
   color: #383838;
   margin: 0px;
   @media only screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: normal;
+  }
+`;
+
+const SecondTitle = styled.h2`
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: bold;
+  color: #383838;
+  margin: 0px;
+  @media only screen and (min-width: 768px) {
     font-size: 36px;
     line-height: normal;
   }
@@ -52,7 +64,7 @@ const Description = styled.p`
   font-size: 16px;
   color: #383838;
   display: inline;
-
+  margin: 0;
   @media only screen and (min-width: 320px) {
     font-size: 18px;
   }
@@ -166,7 +178,7 @@ export default props => (
             Response time: <b>within a few hours</b>
           </Merit>
         </Merits>
-        <MainTitle>The neighborhood</MainTitle>
+        <SecondTitle>The neighborhood</SecondTitle>
         <TextBlock>
           <Description>
             Yudy & Victoria’s home is located in Armenia, Quindio, Colombia.

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import plus from "./plus.svg";
 
 const Option = styled.div`
   margin-top: 24px;
@@ -56,10 +55,6 @@ export default props => (
       <Title>{props.title}</Title>
       <Description>{props.description}</Description>
     </div>
-    <Checkbox>
-      <State>
-        <img src={plus} alt="plus" />
-      </State>
-    </Checkbox>
+    <Checkbox>f</Checkbox>
   </Option>
 );

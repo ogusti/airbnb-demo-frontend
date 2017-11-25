@@ -42,7 +42,7 @@ const Stars = styled.div`
 
 export default props => (
   <Grades>
-    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div className="col-xs-12 col-md-6 ">
       <Grade>
         <Value>Accuracy</Value>
         <Stars>
@@ -54,7 +54,7 @@ export default props => (
         </Stars>
       </Grade>
     </div>
-    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div className="col-xs-12 col-md-6 ">
       <Grade>
         <Value>Communication</Value>
         <Stars>
@@ -66,7 +66,7 @@ export default props => (
         </Stars>
       </Grade>
     </div>
-    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div className="col-xs-12 col-md-6 ">
       <Grade>
         <Value>Cleanliness</Value>
         <Stars>
@@ -78,7 +78,7 @@ export default props => (
         </Stars>
       </Grade>
     </div>
-    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div className="col-xs-12 col-md-6 ">
       <Grade>
         <Value>Location</Value>
         <Stars>
@@ -90,7 +90,7 @@ export default props => (
         </Stars>
       </Grade>
     </div>
-    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div className="col-xs-12 col-md-6 ">
       <Grade>
         <Value>Check In</Value>
         <Stars>
@@ -102,7 +102,7 @@ export default props => (
         </Stars>
       </Grade>
     </div>
-    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div className="col-xs-12 col-md-6 ">
       <Grade>
         <Value>Value</Value>
         <Stars>

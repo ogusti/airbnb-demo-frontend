@@ -70,9 +70,13 @@ const Button = styled.button`
   color: #0f7276;
   display: block;
 `;
-const MoreText = styled.span`margin-right: 8px;`;
+const MoreText = styled.span`
+  margin-right: 8px;
+`;
 
-const MoreImage = styled.img`vertical-align: middle;`;
+const MoreImage = styled.img`
+  vertical-align: middle;
+`;
 
 const Title = styled.h3`
   font-family: CircularAir-Book, sans-serif;
@@ -112,48 +116,50 @@ export default function() {
   return (
     <Overview>
       <div className="container">
-        <div className="col-lg-8">
-          <OverviewTop>
-            <div>
-              <MainTitle>Romantic Cabana with view</MainTitle>
-              <ShortDescription>Entire cabin · Armenia</ShortDescription>
-            </div>
-            <HostProfile name="Yudi & Victoria" img={hostPhoto} />
-          </OverviewTop>
-          <Сharacteristics />
-          <Wrapper>
-            <Description>
-              Located in the coffee region, in the Andean mountains of Colombia,
-              South America, a charming cabana made from bamboo, with a great
-              view and a "sendero" or pathway through the bamboo forest which
-              criss-crosses our 5 acre organic farm, leading down to a stream. A
-              place to relax and commune with nature.
-            </Description>
-            <Button>
-              <MoreText>Read more about the space</MoreText>
-              <MoreImage src={downArrow} />
-            </Button>
-            <Button>Contact host</Button>
-          </Wrapper>
-          <Amenities />
-          <Wrapper>
-            <Title>Always communicate through Airbnb</Title>
-            <Paragraph>
-              To protect your payment, never transfer money or communicate
-              outside of the Airbnb website or app.
-            </Paragraph>
-            <Link>Learn more</Link>
-          </Wrapper>
-          <Wrapper>
-            <Title>House rules</Title>
-            <Rules>Check-in is anytime after 1PM</Rules>
-            <Rules>Check out by 11AM</Rules>
-            <Button>
-              <MoreText>Read all rules</MoreText>
-              <MoreImage src={downArrow} />
-            </Button>
-          </Wrapper>
-          <Cancellations />
+        <div className="row">
+          <div className="col-lg-8">
+            <OverviewTop>
+              <div>
+                <MainTitle>Romantic Cabana with view</MainTitle>
+                <ShortDescription>Entire cabin · Armenia</ShortDescription>
+              </div>
+              <HostProfile name="Yudi & Victoria" img={hostPhoto} />
+            </OverviewTop>
+            <Сharacteristics />
+            <Wrapper>
+              <Description>
+                Located in the coffee region, in the Andean mountains of
+                Colombia, South America, a charming cabana made from bamboo,
+                with a great view and a "sendero" or pathway through the bamboo
+                forest which criss-crosses our 5 acre organic farm, leading down
+                to a stream. A place to relax and commune with nature.
+              </Description>
+              <Button>
+                <MoreText>Read more about the space</MoreText>
+                <MoreImage src={downArrow} />
+              </Button>
+              <Button>Contact host</Button>
+            </Wrapper>
+            <Amenities />
+            <Wrapper>
+              <Title>Always communicate through Airbnb</Title>
+              <Paragraph>
+                To protect your payment, never transfer money or communicate
+                outside of the Airbnb website or app.
+              </Paragraph>
+              <Link>Learn more</Link>
+            </Wrapper>
+            <Wrapper>
+              <Title>House rules</Title>
+              <Rules>Check-in is anytime after 1PM</Rules>
+              <Rules>Check out by 11AM</Rules>
+              <Button>
+                <MoreText>Read all rules</MoreText>
+                <MoreImage src={downArrow} />
+              </Button>
+            </Wrapper>
+            <Cancellations />
+          </div>
         </div>
       </div>
     </Overview>

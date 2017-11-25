@@ -13,6 +13,26 @@ import SimilarListings from "./SimilarListings";
 import ExploreOther from "./ExploreOther";
 import Footer from "../Landing/Footer";
 import SectionUnderFooter from "./SectionUnderFooter";
+import RequestForm from "./RequestForm";
+
+const navBarHeight = 80;
+function stickyRequestForm({ isSticky, style }) {
+  return (
+    <div
+      style={{
+        ...style,
+        paddingTop: isSticky ? navBarHeight + 24 : 0,
+        paddingBottom: 24
+      }}
+    >
+      <RequestForm />
+    </div>
+  );
+}
+
+const RequestFormWrap = styled.div`
+  margin-top: 24px;
+`;
 
 const ShortDescription = styled.div`
   color: #636363;
@@ -28,11 +48,13 @@ export default function() {
   return (
     <div>
       <SectionUnderHeader />
-      <Navigation />
-      <Overview />
-      <Reviews />
-      <NavigationList />
-      <TheHost />
+      <StickyContainer>
+        <Navigation />
+        <Overview />
+        <Reviews />
+        <NavigationList />
+        <TheHost />
+      </StickyContainer>
       <div className="container">
         <MapReact center={{ lat: 61, lng: 24 }} zoom={9} />
         <ShortDescription>

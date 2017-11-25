@@ -33,14 +33,25 @@ const Value = styled.div`
     width: auto;
     margin-right: 30px;
   }
+  @media only screen and (min-width: 768px) {
+    width: auto;
+    margin-right: 40px;
+  }
+  @media only screen and (min-width: 100px) {
+    width: auto;
+    margin-right: 60px;
+  }
 `;
 
-const Img = styled.img`margin-right: 8px;`;
+const Img = styled.img`
+  margin-right: 8px;
+`;
 
 const Text = styled.span`
   font-size: 14px;
   color: #383838;
   white-space: nowrap;
+  font-family: CircularAir-Book, sans-serif;
 `;
 
 export default function() {
