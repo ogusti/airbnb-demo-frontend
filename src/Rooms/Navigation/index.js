@@ -42,17 +42,13 @@ const Dot = styled.span`
 `;
 
 export default () => (
-  <div className="container">
-    <div className="col-lg-8">
-      <Navigation>
-        <NavigationButton isSelected>Overview</NavigationButton>
-        <Dot>·</Dot>
-        <NavigationButton>Reviews</NavigationButton>
-        <Dot>·</Dot>
-        <NavigationButton>The Host</NavigationButton>
-        <Dot>·</Dot>
-        <NavigationButton>Location</NavigationButton>
-      </Navigation>
-    </div>
-  </div>
+  <Navigation>
+    <NavigationButton isSelected>Overview</NavigationButton>
+    <Dot>·</Dot>
+    <NavigationButton>Reviews</NavigationButton>
+    <Dot>·</Dot>
+    <NavigationButton>The Host</NavigationButton>
+    <Dot>·</Dot>
+    <NavigationButton>Location</NavigationButton>
+  </Navigation>
 );

@@ -30,16 +30,6 @@ const TopRow = styled.div`
   margin-top: 16px;
 `;
 
-const Text = styled.span`
-  font-family: CircularAir-Light, sans-serif;
-  font-size: 14px;
-  color: #383838;
-
-  @media only screen and (min-width: 320px) {
-    font-size: 16px;
-  }
-`;
-
 const BottomRow = styled.div`
   display: flex;
   margin-top: 16px;
@@ -53,6 +43,13 @@ const Amenity = styled.div`
   display: flex;
   align-items: center;
   width: 50%;
+  font-family: CircularAir-Light, sans-serif;
+  font-size: 14px;
+  color: #383838;
+
+  @media only screen and (min-width: 320px) {
+    font-size: 16px;
+  }
 `;
 
 const Img = styled.img`
@@ -82,9 +79,13 @@ const ShowAllButton = styled.button`
   color: #0f7276;
   display: block;
 `;
-const ShowAllText = styled.span`margin-right: 8px;`;
+const ShowAllText = styled.span`
+  margin-right: 8px;
+`;
 
-const ShowAllImage = styled.img`vertical-align: middle;`;
+const ShowAllImage = styled.img`
+  vertical-align: middle;
+`;
 
 export default () => (
   <Amenities>
@@ -92,21 +93,21 @@ export default () => (
     <TopRow>
       <Amenity>
         <Img src={internet} />
-        <Text>Internet</Text>
+        Internet
       </Amenity>
       <Amenity>
         <Img src={family} />
-        <Text>Family/kid friendly</Text>
+        Family/kid friendly
       </Amenity>
     </TopRow>
     <BottomRow>
       <Amenity>
         <Img src={wifi} />
-        <Text>Wireless Internet</Text>
+        Wireless Internet
       </Amenity>
       <Amenity>
         <Img src={parking} />
-        <Text>Free parking on premises</Text>
+        Free parking on premises
       </Amenity>
     </BottomRow>
     <ShowAllButton>

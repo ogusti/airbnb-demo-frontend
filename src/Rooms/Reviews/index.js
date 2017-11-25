@@ -7,7 +7,9 @@ import search from "./search.svg";
 import Grades from "./Grades";
 import Review from "./Review";
 
-const Reviews = styled.div`margin-top: 48px;`;
+const Reviews = styled.div`
+  margin-top: 48px;
+`;
 
 const Top = styled.div`
   @media only screen and (min-width: 500px) {
@@ -87,37 +89,35 @@ const Wrapper = styled.div`
 `;
 
 export default props => (
-  <div className="container">
-    <div className="col-lg-8">
-      <Reviews>
-        <Top>
-          <Wrapper>
-            <MainTitle>113 Reviews</MainTitle>
-            <Stars>
-              <Star src={starPicture} alt="star" />
-              <Star src={starPicture} alt="star" />
-              <Star src={starPicture} alt="star" />
-              <Star src={starPicture} alt="star" />
-              <Star src={starPicture} alt="star" />
-            </Stars>
-          </Wrapper>
-          <Search>
-            <SearchImg src={search} />
-            <SearchInput placeholder="Search reviews" />
-          </Search>
-        </Top>
-      </Reviews>
-      <Grades />{" "}
-      <Review name="Marlee" registrationDate="November 2017" avatar={photo1}>
-        This was one of my favourite places we stayed in all on Colombia. A very
-        peaceful setting and a great spot to unwind.
-      </Review>
-      <Review name="Michelle" registrationDate="November 2017" avatar={photo2}>
-        What an absolutely wonderful place to stay! Yudy and Victoria were so
-        kind and lovely, even after we arrived super late due to problems at the
-        airport, and Hernando our driver was super friendly and really patient
-        with our little Spanish. Victoria was a lovely host and gave us.
-      </Review>
-    </div>
+  <div>
+    <Reviews>
+      <Top>
+        <Wrapper>
+          <MainTitle>113 Reviews</MainTitle>
+          <Stars>
+            <Star src={starPicture} alt="star" />
+            <Star src={starPicture} alt="star" />
+            <Star src={starPicture} alt="star" />
+            <Star src={starPicture} alt="star" />
+            <Star src={starPicture} alt="star" />
+          </Stars>
+        </Wrapper>
+        <Search>
+          <SearchImg src={search} />
+          <SearchInput placeholder="Search reviews" />
+        </Search>
+      </Top>
+    </Reviews>
+    <Grades />
+    <Review name="Marlee" registrationDate="November 2017" avatar={photo1}>
+      This was one of my favourite places we stayed in all on Colombia. A very
+      peaceful setting and a great spot to unwind.
+    </Review>
+    <Review name="Michelle" registrationDate="November 2017" avatar={photo2}>
+      What an absolutely wonderful place to stay! Yudy and Victoria were so kind
+      and lovely, even after we arrived super late due to problems at the
+      airport, and Hernando our driver was super friendly and really patient
+      with our little Spanish. Victoria was a lovely host and gave us.
+    </Review>
   </div>
 );

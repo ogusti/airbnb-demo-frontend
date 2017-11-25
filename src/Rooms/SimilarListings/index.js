@@ -62,7 +62,7 @@ export default function() {
               <Card
                 img={home1}
                 type="Entire apartment"
-                beds="3 beds"
+                beds={3}
                 description="Apartamento, piscina y parqueadero para 8 personas"
                 price={50}
                 count={4}
@@ -71,7 +71,7 @@ export default function() {
               <Card
                 img={home2}
                 type="Entire apartment"
-                beds="9 beds"
+                beds={9}
                 description="Full apartment in the best area of the city"
                 price={51}
                 count={3}
@@ -79,7 +79,7 @@ export default function() {
               <Card
                 img={home3}
                 type="Entire apartment"
-                beds="9 beds"
+                beds={9}
                 description="Beautiful Apartament North Armenia Quindio"
                 price={45}
                 count={3}

@@ -21,7 +21,7 @@ function stickyRequestForm({ isSticky, style }) {
     <div
       style={{
         ...style,
-        paddingTop: isSticky ? navBarHeight + 24 : 0,
+        paddingTop: isSticky ? navBarHeight + 24 : 24,
         paddingBottom: 24
       }}
     >
@@ -48,12 +48,22 @@ export default function() {
   return (
     <div>
       <SectionUnderHeader />
+
       <StickyContainer>
-        <Navigation />
-        <Overview />
-        <Reviews />
-        <NavigationList />
-        <TheHost />
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8">
+              <Navigation />
+              <Overview />
+              <Reviews />
+              <NavigationList />
+              <TheHost />
+            </div>
+            <div className="col-lg-4">
+              <Sticky topOffset={-navBarHeight}>{stickyRequestForm}</Sticky>
+            </div>
+          </div>
+        </div>
       </StickyContainer>
       <div className="container">
         <MapReact center={{ lat: 61, lng: 24 }} zoom={9} />

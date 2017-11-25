@@ -82,7 +82,7 @@ export default function(props) {
           <Img src={props.img} alt={props.alt} />
           <TopInfo>
             <TypeInfo>
-              {props.type} <Dot>·</Dot> {props.beds}
+              {props.type} <Dot>·</Dot> {props.beds}beds
             </TypeInfo>
             <Description>{props.description}</Description>
           </TopInfo>

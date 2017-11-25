@@ -34,19 +34,15 @@ const NavigationList = styled.nav`
 
 export default function() {
   return (
-    <div className="container">
-      <div className="col-lg-8">
-        <NavigationList>
-          <Link href="#">1</Link>
-          <Link href="#">2</Link>
-          <Link href="#">3</Link>
-          <Link href="#">...</Link>
-          <Link href="#">17</Link>
-          <Link href="#">
-            <img src={arrow} alt="next page" />
-          </Link>
-        </NavigationList>
-      </div>
-    </div>
+    <NavigationList>
+      <Link href="#">1</Link>
+      <Link href="#">2</Link>
+      <Link href="#">3</Link>
+      <Link href="#">...</Link>
+      <Link href="#">17</Link>
+      <Link href="#">
+        <img src={arrow} alt="next page" />
+      </Link>
+    </NavigationList>
   );
 }

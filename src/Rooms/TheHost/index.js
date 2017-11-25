@@ -140,64 +140,59 @@ const MoreImage = styled.img`
 `;
 
 export default props => (
-  <div className="container">
-    <div className="col-lg-8">
-      <TheHost>
-        <TheHostTop>
-          <div>
-            <MainTitle>Hosted by Yudy & Victoria</MainTitle>
-            <ShortDescription>
-              Santa Ana, California, United States · Joined in August 2014
-            </ShortDescription>
-          </div>
-          <HostProfile img={hostPhoto} />
-        </TheHostTop>
-        <BadgesWrapper>
-          <NumberOfReviews />
-          <Badge />
-        </BadgesWrapper>
-        <TextBlock>
-          <Description>
-            Yudy and I (Victoria) are sisters-in law. Yudy lives in Colombia and
-            would be your hostess on the property. I live in California and am
-            the owner of the property. It is my goal to create a "boutique
-            eco-resort" on the approximately 5 acre farm we have in the coffee
-            growing reg…
-          </Description>
-          <Link>Read more</Link>
-        </TextBlock>
-        <ContactHost>Contact host</ContactHost>
-        <Merits>
-          <Merit>
-            Languages: <b>English, Español</b>
-          </Merit>
-          <Merit>
-            Response rate: <b>100%</b>
-          </Merit>
-          <Merit>
-            Response time: <b>within a few hours</b>
-          </Merit>
-        </Merits>
-        <SecondTitle>The neighborhood</SecondTitle>
-        <TextBlock>
-          <Description>
-            Yudy & Victoria’s home is located in Armenia, Quindio, Colombia.
-          </Description>
-          <SecondDescription>
-            We are situated in the heart of the coffee region in the Andean
-            mountains in Colombia. We are in "Vereda La Pradera" neighborhood,
-            near the small town of "El Caimo", 20 minutes from Armenia and 20
-            minutes from the airport, by car. Close enough for comfort and easy
-            access, far enough from the hustle of traffic and city noise that
-            you can commune with nature. Sleep to the sound of the crickets and
-            awaken to the sound of birds.
-          </SecondDescription>
-        </TextBlock>
-        <Button>
-          <MoreText>Read more about neighborhood</MoreText>
-          <MoreImage src={downArrow} />
-        </Button>
-      </TheHost>
-    </div>
-  </div>
+  <TheHost>
+    <TheHostTop>
+      <div>
+        <MainTitle>Hosted by Yudy & Victoria</MainTitle>
+        <ShortDescription>
+          Santa Ana, California, United States · Joined in August 2014
+        </ShortDescription>
+      </div>
+      <HostProfile img={hostPhoto} />
+    </TheHostTop>
+    <BadgesWrapper>
+      <NumberOfReviews />
+      <Badge />
+    </BadgesWrapper>
+    <TextBlock>
+      <Description>
+        Yudy and I (Victoria) are sisters-in law. Yudy lives in Colombia and
+        would be your hostess on the property. I live in California and am the
+        owner of the property. It is my goal to create a "boutique eco-resort"
+        on the approximately 5 acre farm we have in the coffee growing reg…
+      </Description>
+      <Link>Read more</Link>
+    </TextBlock>
+    <ContactHost>Contact host</ContactHost>
+    <Merits>
+      <Merit>
+        Languages: <b>English, Español</b>
+      </Merit>
+      <Merit>
+        Response rate: <b>100%</b>
+      </Merit>
+      <Merit>
+        Response time: <b>within a few hours</b>
+      </Merit>
+    </Merits>
+    <SecondTitle>The neighborhood</SecondTitle>
+    <TextBlock>
+      <Description>
+        Yudy & Victoria’s home is located in Armenia, Quindio, Colombia.
+      </Description>
+      <SecondDescription>
+        We are situated in the heart of the coffee region in the Andean
+        mountains in Colombia. We are in "Vereda La Pradera" neighborhood, near
+        the small town of "El Caimo", 20 minutes from Armenia and 20 minutes
+        from the airport, by car. Close enough for comfort and easy access, far
+        enough from the hustle of traffic and city noise that you can commune
+        with nature. Sleep to the sound of the crickets and awaken to the sound
+        of birds.
+      </SecondDescription>
+    </TextBlock>
+    <Button>
+      <MoreText>Read more about neighborhood</MoreText>
+      <MoreImage src={downArrow} />
+    </Button>
+  </TheHost>
 );
