@@ -6,7 +6,7 @@ import "./fonts.css";
 import Header from "./Header";
 import Landing from "./Landing";
 import Homes from "./Homes";
-import Rooms from "./Rooms";
+import Rooms from "./Homes/Rooms";
 
 class App extends Component {
   render() {

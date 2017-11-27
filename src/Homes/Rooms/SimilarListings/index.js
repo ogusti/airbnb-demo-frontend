@@ -9,7 +9,7 @@ import {
   Container,
   FluidContainer,
   ScrollContainer
-} from "../../UI/Containers";
+} from "../../../UI/Containers";
 
 const Report = styled.a`
   color: #0f7276;

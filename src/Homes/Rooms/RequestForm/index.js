@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import downArrowSvg from "../../UI/downarrow.svg";
-import starPicture from "../../UI/star.svg";
+import downArrowSvg from "../../../UI/downarrow.svg";
+import starPicture from "../../../UI/star.svg";
 import lamp from "./lamp.png";
 import flag from "./flag.png";
 

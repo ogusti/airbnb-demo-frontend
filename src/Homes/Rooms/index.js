@@ -6,12 +6,12 @@ import SectionUnderHeader from "./SectionUnderHeader";
 import Navigation from "./Navigation";
 import Overview from "./Overview";
 import Reviews from "./Reviews";
-import NavigationList from "../Homes/NavigationList";
+import NavigationList from "../../Homes/NavigationList";
 import TheHost from "./TheHost";
-import MapReact from "../UI/Map";
+import MapReact from "../../UI/Map";
 import SimilarListings from "./SimilarListings";
 import ExploreOther from "./ExploreOther";
-import Footer from "../Landing/Footer";
+import Footer from "../../Landing/Footer";
 import SectionUnderFooter from "./SectionUnderFooter";
 import RequestForm from "./RequestForm";
 

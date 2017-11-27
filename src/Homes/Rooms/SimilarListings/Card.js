@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import starPicture from "../../UI/star.svg";
+import starPicture from "../../../UI/star.svg";
 import { Link as RLink } from "react-router-dom";
 
 export const Dot = styled.span``;

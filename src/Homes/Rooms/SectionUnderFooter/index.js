@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import styled from "styled-components";
-import starPicture from "../../UI/star.svg";
+import starPicture from "../../../UI/star.svg";
 
 const Navigation = styled.nav`
   background-color: white;

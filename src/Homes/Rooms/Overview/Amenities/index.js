@@ -6,12 +6,11 @@ import parking from "./parking.svg";
 import wifi from "./wifi.svg";
 import downArrow from "../downArrow.svg";
 
-const Amenities = styled.div`
+const Amenities = styled.ul`
   font-size: 16px;
   color: #383838;
-  padding-bottom: 23px;
+  padding: 23px 0 23px 0;
   border-bottom: 1px solid #eaebf0;
-  padding-top: 23px;
   font-family: CircularAir-Light, sans-serif;
 `;
 
@@ -39,13 +38,15 @@ const BottomRow = styled.div`
   }
 `;
 
-const Amenity = styled.div`
+const Amenity = styled.li`
   display: flex;
   align-items: center;
   width: 50%;
   font-family: CircularAir-Light, sans-serif;
   font-size: 14px;
   color: #383838;
+  margin: 0;
+  padding: 0;
 
   @media only screen and (min-width: 320px) {
     font-size: 16px;

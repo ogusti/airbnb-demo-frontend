@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import photo1 from "./photo1.png";
 import photo2 from "./photo2.png";
-import starPicture from "../../UI/star.svg";
+import starPicture from "../../../UI/star.svg";
 import search from "./search.svg";
 import Grades from "./Grades";
 import Review from "./Review";
