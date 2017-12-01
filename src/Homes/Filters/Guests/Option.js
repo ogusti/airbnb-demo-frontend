@@ -1,55 +1,46 @@
 import React from "react";
 import styled from "styled-components";
-import minus from "./minus.svg";
-import plus from "./plus.svg";
+import iconMinus from "./minus.svg";
+import iconPlus from "./plus.svg";
 
-const Option = styled.div`
-  display: flex;
-  justify-content: space-between;
-  background: #ffffff;
-  margin-top: 18px;
+const Trigger = styled.button`
+  width: 32px;
+  height: 32px;
+  border: 1px solid ${props => (props.minus ? "#008489" : "#008489")};
+  border-radius: 50%;
+  background-position: center;
+  background-size: 112%;
+  background-repeat: no-repeat;
+  background-color: #ffff;
+  background-image: url(${props => (props.minus ? iconMinus : iconPlus)});
+  cursor: pointer;
 `;
 
-const Title = styled.div`
-  line-height: normal;
-  font-size: 20px;
-  color: #383838;
-`;
-
-const Note = styled.div`
-  font-family: CircularAir-Light, sans-serif;
-  line-height: normal;
-  font-size: 16px;
-  color: #383838;
-  font-weight: 200;
-  margin-top: 7px;
-`;
-
-export const Options = styled.div`
+const Row = styled.div`
   display: flex;
   align-items: center;
-`;
-
-const Button = styled.img`cursor: pointer;`;
-
-const Number = styled.div`
-  font-family: CircularAir-Light, sans-serif;
+  justify-content: space-between;
+  min-width: 114px;
   font-size: 18px;
-  color: #383838;
-  font-weight: 200;
-  padding: 0px 19px;
+  font-weight: 300;
 `;
 
-export default props => (
-  <Option>
-    <div>
-      <Title>{props.title}</Title>
-      {props.note && <Note>{props.note}</Note>}
-    </div>
-    <Options>
-      <Button src={minus} />
-      <Number>0</Number>
-      <Button src={plus} />
-    </Options>
-  </Option>
-);
+const Option = props => {
+  const increase = () => {
+    props.onChange(props.value + 1, props.id);
+  };
+
+  const decrease = () => {
+    props.onChange(props.value > 0 ? props.value - 1 : 0, props.id);
+  };
+
+  return (
+    <Row>
+      <Trigger minus onClick={decrease} />
+      {props.value}
+      <Trigger onClick={increase} />
+    </Row>
+  );
+};
+
+export default Option;

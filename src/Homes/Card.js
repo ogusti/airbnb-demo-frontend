@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import StarPicture from "../UI/star.svg";
+import { Link as RLink } from "react-router-dom";
 
 export const Dot = styled.span``;
 
-export const Card = styled.div`margin-bottom: 40px;`;
+export const Card = styled.div`
+  margin-bottom: 40px;
+`;
 
 export const Img = styled.img`
   width: 100%;
@@ -21,7 +24,9 @@ export const Stars = styled.div`
   margin-right: 5px;
 `;
 
-export const Star = styled.img`margin-right: 4px;`;
+export const Star = styled.img`
+  margin-right: 4px;
+`;
 
 export const MiddleInfo = styled.div`
   text-align: left;
@@ -57,32 +62,36 @@ export const BottomInfo = styled.div`
   margin-top: 4px;
 `;
 
-export const SubInfo = styled.span`font-size: 12px;`;
+export const SubInfo = styled.span`
+  font-size: 12px;
+`;
 
 export default function(props) {
   return (
     <div className="col-xs-12 col-md-6 col-lg-6">
       <Card>
-        <Img src={props.img} alt={props.alt} />
-        <TopInfo>
-          <Price>${props.price}</Price>
-          <Description>{props.description}</Description>
-        </TopInfo>
-        <MiddleInfo>
-          {props.type} <Dot>·</Dot> {props.beds}
-        </MiddleInfo>
-        <BottomInfo>
-          <Stars>
-            <Star src={StarPicture} alt="star" />
-            <Star src={StarPicture} alt="star" />
-            <Star src={StarPicture} alt="star" />
-            <Star src={StarPicture} alt="star" />
-            <Star src={StarPicture} alt="star" />
-          </Stars>
-          <SubInfo>
-            {props.sub} <Dot>·</Dot> Superhost
-          </SubInfo>
-        </BottomInfo>
+        <RLink to="/rooms">
+          <Img src={props.img} alt={props.alt} />
+          <TopInfo>
+            <Price>${props.price}</Price>
+            <Description>{props.description}</Description>
+          </TopInfo>
+          <MiddleInfo>
+            {props.type} <Dot>·</Dot> {props.beds}
+          </MiddleInfo>
+          <BottomInfo>
+            <Stars>
+              <Star src={StarPicture} alt="star" />
+              <Star src={StarPicture} alt="star" />
+              <Star src={StarPicture} alt="star" />
+              <Star src={StarPicture} alt="star" />
+              <Star src={StarPicture} alt="star" />
+            </Stars>
+            <SubInfo>
+              {props.sub} <Dot>·</Dot> Superhost
+            </SubInfo>
+          </BottomInfo>
+        </RLink>
       </Card>
     </div>
   );
