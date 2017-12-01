@@ -87,6 +87,7 @@ const Link = styled.a`
   color: #0f7276;
   display: inline;
   margin-left: 8px;
+  cursor: pointer;
 `;
 
 const TextBlock = styled.div`
@@ -129,6 +130,7 @@ const Button = styled.button`
   color: #0f7276;
   display: block;
   margin-bottom: 16px;
+  cursor: pointer;
 `;
 
 const MoreText = styled.span`

@@ -50,7 +50,7 @@ export const TopButtons = styled.div`
     margin-right: 8px;
   }
   @media only screen and (min-width: 768px) {
-    margin-right: 75px;
+    margin-right: 30px;
   }
 `;
 
@@ -73,7 +73,7 @@ export const BottomButton = styled.div`
   }
 
   @media only screen and (min-width: 768px) {
-    margin-left: 81px;
+    margin-left: 45px;
     margin-right: auto;
   }
 `;

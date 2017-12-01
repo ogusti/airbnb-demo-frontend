@@ -86,6 +86,7 @@ const RequestButton = styled.button`
   border: none;
   padding: 12px 16px;
   font-size: 16px;
+  cursor: pointer;
 
   @media only screen and (min-width: 320px) {
     font-size: 18px;
@@ -96,9 +97,9 @@ const CheckInInput = Input.extend`
   border-right: none;
 `;
 
-const GuestsButton = styled.button`
+const GuestsButton = styled.select`
   margin-top: 8px;
-  padding: 12px 208px 12px 12px;
+  padding: 12px 0px 12px 12px;
   margin-bottom: 24px;
   border: 1px solid rgba(118, 118, 118, 0.2);
   color: #636363;
@@ -112,6 +113,12 @@ const GuestsButton = styled.button`
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
+  display: block;
+  width: 100%;
+  appearance: none;
+  &::-ms-expand {
+    display: none;
+  }
 `;
 
 const PriceWrapper = styled.div`
@@ -158,6 +165,7 @@ const Report = styled.div`
   font-size: 14px;
   justify-content: center;
   margin-top: 15px;
+  cursor: pointer;
 `;
 
 const Flag = styled.img`
@@ -196,7 +204,13 @@ export default function() {
         </ControlsGroup>
         <Label>
           Guests
-          <GuestsButton>1 guest</GuestsButton>
+          <GuestsButton>
+            <option value="1 guest">1 guest</option>
+            <option value="2 guests">2 guests</option>
+            <option value="3 guests">3 guests</option>
+            <option value="4 guests">4 guests</option>
+            <option value="5 guests">5 guests</option>
+          </GuestsButton>
         </Label>
         <RequestWrapper>
           <RequestButton>Request to book</RequestButton>

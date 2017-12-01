@@ -16,7 +16,7 @@ export const Img = styled.img`
 
 export const TopInfo = styled.div`
   text-align: left;
-  margin-top: 1px;
+  margin-top: 8px;
 `;
 
 export const Stars = styled.div`
@@ -82,7 +82,7 @@ export default function(props) {
           <Img src={props.img} alt={props.alt} />
           <TopInfo>
             <TypeInfo>
-              {props.type} <Dot>·</Dot> {props.beds}beds
+              {props.type} <Dot>·</Dot> {props.beds} beds
             </TypeInfo>
             <Description>{props.description}</Description>
           </TopInfo>

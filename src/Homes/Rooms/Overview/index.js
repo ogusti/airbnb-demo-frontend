@@ -69,9 +69,12 @@ const Button = styled.button`
   margin-top: 23px;
   color: #0f7276;
   display: block;
+  cursor: pointer;
 `;
+
 const MoreText = styled.span`
   margin-right: 8px;
+  cursor: pointer;
 `;
 
 const MoreImage = styled.img`
@@ -103,6 +106,7 @@ const Paragraph = styled.p`
 const Link = styled.a`
   color: #0f7276;
   margin-top: 15px;
+  cursor: pointer;
 `;
 
 const Rules = styled.p`

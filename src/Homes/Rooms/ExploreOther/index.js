@@ -89,6 +89,7 @@ const Link = styled.a`
   font-size: 14px;
   font-family: CircularAir-Light, sans-serif;
   color: #636363;
+  cursor: pointer;
   @media only screen and (min-width: 320px) {
     font-size: 12px;
   }
@@ -114,58 +115,58 @@ export default props => (
         </Navigation>
       </Places>
       <ListOfPlaces>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Cartagena Vacation Rentals</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Bucaramanga</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Manuel Antonio</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Cartagena De Indias (Distrito Turistico Y Cultural)</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Quito</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Santander de Quilichao</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>San Andrés Vacation Rentals</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Bogota</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Santa Marta (Distrito Turistico Cultural E Historico)</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Rionegro</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Anapoima</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Puerto Rico</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Willemstad Vacation Rentals</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Cali</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Chia</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Cartagena Vacation Rentals</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Ibague</Link>
         </div>
-        <div className="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+        <div className="col-xs-12 col-sm-4">
           <Link>Medellin</Link>
         </div>
       </ListOfPlaces>

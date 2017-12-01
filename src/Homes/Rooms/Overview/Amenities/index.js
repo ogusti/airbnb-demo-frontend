@@ -79,6 +79,7 @@ const ShowAllButton = styled.button`
   margin-top: 23px;
   color: #0f7276;
   display: block;
+  cursor: pointer;
 `;
 const ShowAllText = styled.span`
   margin-right: 8px;

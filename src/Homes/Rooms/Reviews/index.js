@@ -76,7 +76,6 @@ const SearchInput = styled.input`
   color: #383838;
   border: none;
   padding: 12px 12px 12px;
-  outline: none;
 
   @media only screen and (min-width: 320px) {
     padding: 8px 8px 8px 0;
