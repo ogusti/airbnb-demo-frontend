@@ -16,6 +16,7 @@ export const Filters = styled.div`
   background-color: white;
   top: 80px;
   display: flex;
+  white-space: nowrap;
 `;
 
 export const DesktopButtons = styled.div`
@@ -27,10 +28,9 @@ export const DesktopButtons = styled.div`
 
 const Wrapper = styled.div`
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
   top: 80px;
-  display: flex;
   border-bottom: 1px solid rgba(72, 72, 72, 0.2);
   height: 57px;
 `;
@@ -40,24 +40,24 @@ export default function() {
     <Wrapper>
       <div className="container">
         <Filters>
-          <DropDown name="Dates">
+          <DropDown name="Dates" subName="Check in — Check out">
             <CalendarReact />
           </DropDown>
-          <DropDown name="Guests">
+          <DropDown name="Guests" subName="Guests">
             <Guests />
           </DropDown>
           <DesktopButtons>
-            <DropDown name="Room type">
+            <DropDown name="Room type" subName="Room type">
               <RoomType />
             </DropDown>
-            <DropDown name="Price">
+            <DropDown name="Price" subName="Price">
               <Price />
             </DropDown>
-            <DropDown name="Instant book">
+            <DropDown name="Instant book" subName="Instant book">
               <InstantBook />
             </DropDown>
           </DesktopButtons>
-          <DropDown name="More filters" />
+          <DropDown name="More filters" subName="More filters" />
         </Filters>
       </div>
     </Wrapper>

@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import plus from "./plus.svg";
 
 const Option = styled.div`
   margin-top: 24px;
   margin-left: 16px;
+  display: flex;
 `;
 
 const State = styled.div`
@@ -34,6 +34,7 @@ const Description = styled.p`
   font-size: 14px;
   color: #383838;
   width: 200px;
+  white-space: normal;
 `;
 
 const Checkbox = styled.div`
@@ -44,17 +45,16 @@ const Checkbox = styled.div`
   background: rgba(72, 72, 72, 0.08);
   border: 1px solid rgba(72, 72, 72, 0.3);
   box-sizing: border-box;
+  margin-top: 16px;
   border-radius: 24px;
 `;
 
 export default props => (
   <Option>
-    <Title>{props.title}</Title>
-    <Description>{props.description}</Description>
-    <Checkbox>
-      <State>
-        <img src={plus} alt="plus" />
-      </State>
-    </Checkbox>
+    <div>
+      <Title>{props.title}</Title>
+      <Description>{props.description}</Description>
+    </div>
+    <Checkbox>f</Checkbox>
   </Option>
 );

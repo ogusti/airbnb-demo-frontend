@@ -26,7 +26,7 @@ export const Link = styled.a`
   }
 `;
 
-export const NavigationList = styled.nav`
+const NavigationList = styled.nav`
   display: flex;
   justify-content: center;
 `;
